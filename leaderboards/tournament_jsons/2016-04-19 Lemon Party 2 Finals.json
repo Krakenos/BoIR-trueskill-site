@@ -1,0 +1,116 @@
+{
+  "name": "Lemon Party 2 Finals",
+  "challonge_id": "lemonparty2finals",
+  "challonge": "http://challonge.com/lemonparty2finals",
+  "date": "2016-04-19",
+  "notability": "major",
+  "organizer": "Zamiell",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1 part 1",
+      "url": "https://www.twitch.tv/videos/59663765"
+    },
+    {
+      "description": "day 1 part 2",
+      "url": "https://www.twitch.tv/videos/59663837"
+    },
+    {
+      "description": "day 2 part 1",
+      "url": "https://www.twitch.tv/videos/59828956"
+    },
+    {
+      "description": "day 2 part 2",
+      "url": "https://www.twitch.tv/videos/59829117"
+    },
+    {
+      "description": "day 2 part 3",
+      "url": "https://www.twitch.tv/videos/59829514"
+    },
+    {
+      "description": "Loser Bracket part 1",
+      "url": "https://www.twitch.tv/videos/60027237"
+    },
+    {
+      "description": "Grand Finals (Part 1)",
+      "url": "https://www.twitch.tv/videos/59829898"
+    },
+    {
+      "description": "Grand Finals (Part 2)",
+      "url": "https://www.twitch.tv/videos/59830179"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "BrainTM",
+      "loser": "nicoluwu",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "NuRelic",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "fug1t",
+      "score": "3-2"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "bmz_loop",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "thisguyisbarry",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "ProblemsIRL",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "BrainTM",
+      "score": "3-1"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "nicoluwu",
+      "score": "3-1"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "bmz_loop",
+      "score": "3-0"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "ProblemsIRL",
+      "score": "3-2"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "thisguyisbarry",
+      "score": "3-0"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "fug1t",
+      "score": "3-1"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "BrainTM",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "NuRelic",
+      "score": "3-2"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Pandora's Box 2",
+  "challonge_id": "pandoradeux",
+  "challonge": "http://challonge.com/pandoradeux",
+  "date": "2017-06-10",
+  "notability": "minor",
+  "organizer": "LaTaupeFR",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Battosai88",
+      "loser": "TheSchmu",
+      "score": "2-0"
+    },
+    {
+      "winner": "Enadras",
+      "loser": "soxhawk",
+      "score": "2-0"
+    },
+    {
+      "winner": "Greenleaf699",
+      "loser": "flaw456",
+      "score": "2-1"
+    },
+    {
+      "winner": "djforceps",
+      "loser": "Sakk_",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "Yajiji",
+      "score": "2-0"
+    },
+    {
+      "winner": "Ledoc31",
+      "loser": "Calimero38750",
+      "score": "2-0"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "VicThor23",
+      "score": "2-0"
+    },
+    {
+      "winner": "Curedents",
+      "loser": "LuchoGonze53",
+      "score": "2-1"
+    },
+    {
+      "winner": "Enadras",
+      "loser": "Battosai88",
+      "score": "2-0"
+    },
+    {
+      "winner": "djforceps",
+      "loser": "Greenleaf699",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "Ledoc31",
+      "score": "2-0"
+    },
+    {
+      "winner": "Curedents",
+      "loser": "TheMoonSage",
+      "score": "2-1"
+    },
+    {
+      "winner": "djforceps",
+      "loser": "Enadras",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "Curedents",
+      "score": "2-0"
+    },
+    {
+      "winner": "djforceps",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    }
+  ]
+}

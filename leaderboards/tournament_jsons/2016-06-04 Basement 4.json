@@ -1,0 +1,97 @@
+{
+  "name": "Basement 4",
+  "challonge_id": "Basement_4",
+  "challonge": "http://challonge.com/Basement_4",
+  "date": "2016-06-04",
+  "notability": "minor",
+  "organizer": "SlashSP",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/71266544"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/71266637"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "frufrubees",
+      "loser": "PaulByPaul",
+      "score": "2-0"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "xUnhingedMoose",
+      "score": "2-0"
+    },
+    {
+      "winner": "lexicalpedant",
+      "loser": "s0cialphobia",
+      "score": "2-0"
+    },
+    {
+      "winner": "Kanga1981",
+      "loser": "Chronometrics",
+      "score": "2-1"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "beastmax1100",
+      "score": "2-0"
+    },
+    {
+      "winner": "Tanook_Leduc",
+      "loser": "xanderkrewz",
+      "score": "2-1"
+    },
+    {
+      "winner": "Waltimate",
+      "loser": "cariot3s",
+      "score": "2-1"
+    },
+    {
+      "winner": "SedNegi",
+      "loser": "Axuba",
+      "score": "2-1"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "frufrubees",
+      "score": "2-0"
+    },
+    {
+      "winner": "lexicalpedant",
+      "loser": "Kanga1981",
+      "score": "2-1"
+    },
+    {
+      "winner": "Tanook_Leduc",
+      "loser": "StoneAgeMarcus",
+      "score": "2-1"
+    },
+    {
+      "winner": "SedNegi",
+      "loser": "Waltimate",
+      "score": "2-1"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "lexicalpedant",
+      "score": "2-0"
+    },
+    {
+      "winner": "SedNegi",
+      "loser": "Tanook_Leduc",
+      "score": "2-1"
+    },
+    {
+      "winner": "SedNegi",
+      "loser": "Warshoty",
+      "score": "3-1"
+    }
+  ]
+}

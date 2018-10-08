@@ -1,0 +1,83 @@
+{
+  "name": "Isaacs of the Round 3 Seeded Finals",
+  "challonge_id": "IoTR3_seeded_finals",
+  "challonge": "https://challonge.com/IoTR3_seeded_finals",
+  "date": "2018-04-14",
+  "notability": "major",
+  "organizer": "xUnhingedMoose",
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Dea1h",
+      "loser": "GamonymousRC",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "CrafterLynx",
+      "score": "3-1"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Shigan_",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "ceehe",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "thereisnofuture",
+      "score": "3-0"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "GamonymousRC",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "ceehe",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "CrafterLynx",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "thereisnofuture",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Shigan_",
+      "score": "4-2"
+    }
+  ]
+}

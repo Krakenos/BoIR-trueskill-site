@@ -1,0 +1,63 @@
+{
+  "name": "Super Fun Time Diversity League Finals",
+  "challonge_id": "SFT_Solo_Finals",
+  "challonge": "https://challonge.com/SFT_Solo_Finals",
+  "date": "2018-05-19",
+  "notability": "minor",
+  "organizer": "PassionDrama; TheMoonSage",
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [
+    {
+      "description": "Playlist with all the cast done by bmz_loop",
+      "url": "https://www.twitch.tv/collections/dYrMjaDcIRXrCQ"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "ceehe",
+      "loser": "leo_ze_tron",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "SlashSP",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "MoucheronQuipet",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "CrafterLynx",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "ReidMercury__",
+      "score": "3-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Cyber_1",
+      "score": "4-0"
+    }
+  ]
+}

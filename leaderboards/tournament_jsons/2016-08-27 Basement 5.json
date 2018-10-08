@@ -1,0 +1,97 @@
+{
+  "name": "Basement 5",
+  "challonge_id": "basement_5",
+  "challonge": "http://challonge.com/basement_5",
+  "date": "2016-08-27",
+  "notability": "minor",
+  "organizer": "SlashSP",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/86417872"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/86418133"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Victor23799",
+      "loser": "pg23802",
+      "score": "2-1"
+    },
+    {
+      "winner": "jaaski99",
+      "loser": "Waltimate",
+      "score": "2-0"
+    },
+    {
+      "winner": "lexicalpedant",
+      "loser": "SN_idiot",
+      "score": "2-1"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "sfan786",
+      "score": "2-1"
+    },
+    {
+      "winner": "Peiw",
+      "loser": "hlbms567",
+      "score": "2-0"
+    },
+    {
+      "winner": "klover48",
+      "loser": "L314",
+      "score": "2-0"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "starg09",
+      "score": "2-0"
+    },
+    {
+      "winner": "Xelnas",
+      "loser": "TheMoonSage",
+      "score": "2-1"
+    },
+    {
+      "winner": "jaaski99",
+      "loser": "Victor23799",
+      "score": "2-0"
+    },
+    {
+      "winner": "lexicalpedant",
+      "loser": "xUnhingedMoose",
+      "score": "2-0"
+    },
+    {
+      "winner": "klover48",
+      "loser": "Peiw",
+      "score": "2-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "Xelnas",
+      "score": "2-0"
+    },
+    {
+      "winner": "lexicalpedant",
+      "loser": "jaaski99",
+      "score": "2-1"
+    },
+    {
+      "winner": "klover48",
+      "loser": "Nariom",
+      "score": "2-1"
+    },
+    {
+      "winner": "klover48",
+      "loser": "lexicalpedant",
+      "score": "3-2"
+    }
+  ]
+}

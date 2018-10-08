@@ -1,0 +1,106 @@
+{
+  "name": "Lost Child",
+  "challonge_id": "lostchild",
+  "challonge": "http://challonge.com/lostchild",
+  "date": "2015-12-12",
+  "notability": "minor",
+  "organizer": "Xelnas",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "AlwaysBoredKB21",
+      "loser": "KitsuneWynterGames",
+      "score": "1-0"
+    },
+    {
+      "winner": "EladDifficult",
+      "loser": "ceehe",
+      "score": "1-0"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "nicoluwu",
+      "score": "1-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "AlwaysBoredKB21",
+      "score": "2-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Dea1h",
+      "score": "2-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Oh_My_Goth_",
+      "score": "2-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "FiveMoreMinutes",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "EladDifficult",
+      "score": "2-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Peppicx",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "NebularView",
+      "score": "2-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Thalen22",
+      "score": "2-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "ProblemsIRL",
+      "score": "2-1"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "antizoubilamaka",
+      "score": "2-0",
+      "description": "Forfeit"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "HauntedQuest",
+      "score": "2-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Hyphen_ated",
+      "score": "2-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Ou_J",
+      "score": "2-0",
+      "description": "guessed from the bracket semi-finals were still bo3 due to inconsistent scoring between them"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Zamiell",
+      "score": "2-0",
+      "description": "guessed from the bracket semi-finals were still bo3 due to inconsistent scoring between them"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Cyber_1",
+      "score": "3-2"
+    }
+  ]
+}

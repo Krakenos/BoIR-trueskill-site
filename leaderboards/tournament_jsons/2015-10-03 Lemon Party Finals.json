@@ -1,0 +1,108 @@
+{
+  "name": "Lemon Party Finals",
+  "challonge_id": "lemonpartyfinals",
+  "challonge": "http://challonge.com/lemonpartyfinals",
+  "date": "2015-10-03",
+  "notability": "major",
+  "organizer": "Zamiell",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "Finals - MolochBob vs ConnorB",
+      "url": "https://www.twitch.tv/videos/21062994"
+    },
+    {
+      "description": "Finals - Imwaytopunny vs Hyphenated (part 1)",
+      "url": "https://www.twitch.tv/videos/21101978"
+    },
+    {
+      "description": "Finals - Imwaytopunny vs Mikeylikeslt",
+      "url": "https://www.twitch.tv/videos/21101807"
+    },
+    {
+      "description": "Finals - Imwaytopunny vs Hyphenated (part 1)",
+      "url": "https://www.twitch.tv/videos/21102004"
+    },
+    {
+      "description": "Lemon League Championship (Day 1 - Part 1)",
+      "url": "https://www.twitch.tv/videos/20839473"
+    },
+    {
+      "description": "Lemon League Championship (Day 1 - Part 2)",
+      "url": "https://www.twitch.tv/videos/20839415"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "ProblemsIRL",
+      "loser": "MolochBob",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "ConnorB_",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "imwaytopunny",
+      "score": "3-0"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "MikeyLikeslt",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Hyphen_ated",
+      "score": "3-1"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "antizoubilamaka",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "bmz_loop",
+      "score": "3-2"
+    },
+    {
+      "winner": "ConnorB_",
+      "loser": "MolochBob",
+      "score": "3-0"
+    },
+    {
+      "winner": "imwaytopunny",
+      "loser": "MikeyLikeslt",
+      "score": "3-0"
+    },
+    {
+      "winner": "ConnorB_",
+      "loser": "antizoubilamaka",
+      "score": "3-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "imwaytopunny",
+      "score": "3-2"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "ConnorB_",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "bmz_loop",
+      "score": "3-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Hyphen_ated",
+      "score": "3-2"
+    }
+  ]
+}

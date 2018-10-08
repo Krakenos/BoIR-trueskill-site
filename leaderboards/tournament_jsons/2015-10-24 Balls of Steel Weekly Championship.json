@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly Championship",
+  "challonge_id": "boschamp",
+  "challonge": "http://challonge.com/boschamp",
+  "date": "2015-10-24",
+  "notability": "major",
+  "organizer": "Diabetech",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Ou_J",
+      "loser": "imwaytopunny",
+      "score": "3-2"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "REXmoreOP",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "BrainTM",
+      "score": "3-2"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "Fisshy_",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Zamiell",
+      "score": "3-2"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "MikeyLikeslt",
+      "score": "3-1"
+    },
+    {
+      "winner": "Black_yuu",
+      "loser": "YamaYamaDingDong",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Hazard900",
+      "score": "3-2"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "NebularView",
+      "score": "3-2"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "bmz_loop",
+      "score": "3-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Black_yuu",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "ProblemsIRL",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Hyphen_ated",
+      "score": "3-2"
+    }
+  ]
+}

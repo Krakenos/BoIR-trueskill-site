@@ -1,0 +1,184 @@
+{
+  "name": "Isaacs of the Round Finals",
+  "challonge_id": "IoTR",
+  "challonge": "http://challonge.com/IoTR",
+  "date": "2016-11-07",
+  "notability": "major",
+  "organizer": "xUnhingedMoose",
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/104824918"
+    },
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/104825131"
+    },
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/104825242"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/104825377"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/104825439"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Zamiell",
+      "loser": "Sp1kess",
+      "score": "3-0"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "SlashSP",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Chance_Eluded",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "Thalen22",
+      "score": "3-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Shigan_",
+      "score": "3-2"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "Neg_Eggs",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "StoneAgeMarcus",
+      "score": "3-0"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "910dan",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Krakenos",
+      "score": "3-0"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Warshoty",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "thisguyisbarry",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Sp1kess",
+      "score": "3-0"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Chance_Eluded",
+      "score": "3-2"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "Neg_Eggs",
+      "score": "3-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Thalen22",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "StoneAgeMarcus",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Krakenos",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "910dan",
+      "score": "3-2"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Warshoty",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "thisguyisbarry",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "SlashSP",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Zamiell",
+      "score": "4-2"
+    }
+  ]
+}

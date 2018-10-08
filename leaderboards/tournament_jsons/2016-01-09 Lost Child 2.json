@@ -1,0 +1,101 @@
+{
+  "name": "Lost Child 2",
+  "challonge_id": "lostchild2",
+  "challonge": "http://challonge.com/lostchild2",
+  "date": "2016-01-09",
+  "notability": "minor",
+  "organizer": "Xelnas",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "vod 1",
+      "url": "https://www.twitch.tv/videos/37155051"
+    },
+    {
+      "description": "vod 2",
+      "url": "https://www.twitch.tv/videos/37154841"
+    },
+    {
+      "description": "vod 3",
+      "url": "https://www.twitch.tv/videos/37154951"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "BrainTM",
+      "loser": "Augo48",
+      "score": "2-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "DKlaww",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "InvaderTimStreams",
+      "score": "2-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "sillypears",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "ceehe",
+      "score": "2-0"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "HauntedQuest",
+      "score": "2-1"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "Ou_J",
+      "score": "2-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "nicoluwu",
+      "score": "2-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "BrainTM",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Hyphen_ated",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "NebularView",
+      "score": "3-1"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "Zamiell",
+      "score": "3-2"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Dea1h",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "REXmoreOP",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "ProblemsIRL",
+      "score": "3-2"
+    }
+  ]
+}

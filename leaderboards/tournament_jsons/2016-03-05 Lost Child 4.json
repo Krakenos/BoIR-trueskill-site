@@ -1,0 +1,48 @@
+{
+  "name": "Lost Child 4",
+  "challonge_id": "Lostchilddivmod",
+  "challonge": "http://challonge.com/Lostchilddivmod",
+  "date": "2016-03-05",
+  "notability": "minor",
+  "organizer": "Xelnas",
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Xelnas",
+      "loser": "Lobsterosity",
+      "score": "3-1"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "AlwaysBoredKB21",
+      "score": "3-1"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "Peppicx",
+      "score": "3-1"
+    },
+    {
+      "winner": "Rydyell",
+      "loser": "Thalen22",
+      "score": "3-2"
+    },
+    {
+      "winner": "Xelnas",
+      "loser": "ItsScion",
+      "score": "3-2"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "Rydyell",
+      "score": "3-1"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "Xelnas",
+      "score": "3-0"
+    }
+  ]
+}

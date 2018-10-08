@@ -1,0 +1,4 @@
+requests
+trueskill
+django
+python-dotenv

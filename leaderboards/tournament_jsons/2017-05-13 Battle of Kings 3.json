@@ -1,0 +1,50 @@
+{
+  "name": "Battle of Kings 3",
+  "challonge_id": "BattleOfKings3",
+  "challonge": "http://challonge.com/BattleOfKings3",
+  "date": "2017-05-13",
+  "notability": "minor",
+  "organizer": "Dea1h",
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Dea1h",
+      "score": "5-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "giraffefizzoid",
+      "score": "5-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Cyber_1",
+      "score": "5-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "giraffefizzoid",
+      "score": "5-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Cyber_1",
+      "score": "5-0",
+      "description": "Forfeit"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "antizoubilamaka",
+      "score": "5-4"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "antizoubilamaka",
+      "score": "5-0",
+      "description": "Exact score unknown, match not recorded."
+    }
+  ]
+}

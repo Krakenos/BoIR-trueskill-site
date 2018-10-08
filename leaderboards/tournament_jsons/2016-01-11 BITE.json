@@ -1,0 +1,557 @@
+{
+  "name": "BITE",
+  "challonge_id": "ud6vduat",
+  "challonge": "http://challonge.com/ud6vduat",
+  "date": "2016-01-11",
+  "notability": "minor",
+  "organizer": "Shigan_",
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "Zazima VS Massiste",
+      "url": "https://www.twitch.tv/videos/101104303"
+    },
+    {
+      "description": "Smushis VS Teina",
+      "url": "https://www.twitch.tv/videos/101104437"
+    },
+    {
+      "description": "IceChaos VS Greed",
+      "url": "https://www.twitch.tv/videos/101104647"
+    },
+    {
+      "description": "Kanjo VS Cayoche",
+      "url": "https://www.twitch.tv/videos/101283912"
+    },
+    {
+      "description": "Neness VS MrPopoche",
+      "url": "https://www.twitch.tv/videos/101284259"
+    },
+    {
+      "description": "Vin25cent VS Chfou",
+      "url": "https://www.twitch.tv/videos/101490125"
+    },
+    {
+      "description": "Calimero VS Kokuho",
+      "url": "https://www.twitch.tv/videos/101490307"
+    },
+    {
+      "description": "Bodybrest VS Majingrams",
+      "url": "https://www.twitch.tv/videos/101490456"
+    },
+    {
+      "description": "Noctyan VS Hikarichan",
+      "url": "https://www.twitch.tv/videos/101691067"
+    },
+    {
+      "description": "Molfried VS Tanook",
+      "url": "https://www.twitch.tv/videos/101691334"
+    },
+    {
+      "description": "Khushas VS Venom",
+      "url": "https://www.twitch.tv/videos/101691524"
+    },
+    {
+      "description": "SergeBenamou31 VS Nariom",
+      "url": "https://www.twitch.tv/videos/102540053"
+    },
+    {
+      "description": "Greed VS Cayoche",
+      "url": "https://www.twitch.tv/videos/102540237"
+    },
+    {
+      "description": "Molfried VS Chfou",
+      "url": "https://www.twitch.tv/videos/102747902"
+    },
+    {
+      "description": "IceChaos VS Kanjo",
+      "url": "https://www.twitch.tv/videos/102748129"
+    },
+    {
+      "description": "Cassebrique VS DarkRaziel",
+      "url": "https://www.twitch.tv/videos/103160430"
+    },
+    {
+      "description": "Nariom VS MrPopoche",
+      "url": "https://www.twitch.tv/videos/103160652"
+    },
+    {
+      "description": "Hyperjaja VS Xemorej",
+      "url": "https://www.twitch.tv/videos/103160829"
+    },
+    {
+      "description": "AeroKanzaki VS Eggs",
+      "url": "https://www.twitch.tv/videos/103160947"
+    },
+    {
+      "description": "Cassebrique VS Noctyan",
+      "url": "https://www.twitch.tv/videos/104002000"
+    },
+    {
+      "description": "Curedents VS Zazima",
+      "url": "https://www.twitch.tv/videos/104002193"
+    },
+    {
+      "description": "Leo_ze_tron VS Massiste",
+      "url": "https://www.twitch.tv/videos/104089962"
+    },
+    {
+      "description": "Xemorej VS Majingrams",
+      "url": "https://www.twitch.tv/videos/104196019"
+    },
+    {
+      "description": "Calimero VS Smushis",
+      "url": "https://www.twitch.tv/videos/104196799"
+    },
+    {
+      "description": "SergeBenamou31 VS Neness",
+      "url": "https://www.twitch.tv/videos/104410028"
+    },
+    {
+      "description": "Hyperjaja VS Bodybrest",
+      "url": "https://www.twitch.tv/videos/104410142"
+    },
+    {
+      "description": "Khushas VS AeroKanzaki",
+      "url": "https://www.twitch.tv/videos/104410271"
+    },
+    {
+      "description": "DarkRaziel VS Hikarichan",
+      "url": "https://www.twitch.tv/videos/104719972"
+    },
+    {
+      "description": "Cayoche VS Teina (Part 1)",
+      "url": "https://www.twitch.tv/videos/104720045"
+    },
+    {
+      "description": "Cayoche VS Teina (Part 2)",
+      "url": "https://www.twitch.tv/videos/104720098"
+    },
+    {
+      "description": "Venom VS Eggs",
+      "url": "https://www.twitch.tv/videos/104720153"
+    },
+    {
+      "description": "Bodybrest VS Tanook Leduc",
+      "url": "https://www.twitch.tv/videos/105945215"
+    },
+    {
+      "description": "MrPopoche VS Hikarichan",
+      "url": "https://www.twitch.tv/videos/105945339"
+    },
+    {
+      "description": "Greed VS AeroKanzaki",
+      "url": "https://www.twitch.tv/videos/105945485"
+    },
+    {
+      "description": "Molfried VS Cassebrique",
+      "url": "https://www.twitch.tv/videos/106153078"
+    },
+    {
+      "description": "Nariom VS Hyperjaja",
+      "url": "https://www.twitch.tv/videos/106153257"
+    },
+    {
+      "description": "Venom VS IceChaos",
+      "url": "https://www.twitch.tv/videos/106153482"
+    },
+    {
+      "description": "Leo_ze_tron VS Eggs",
+      "url": "https://www.twitch.tv/videos/106827722"
+    },
+    {
+      "description": "Massiste VS Smushis",
+      "url": "https://www.twitch.tv/videos/106828178"
+    },
+    {
+      "description": "Chfou VS Majingrams",
+      "url": "https://www.twitch.tv/videos/106828458"
+    },
+    {
+      "description": "Tanook VS MrPopoche",
+      "url": "https://www.twitch.tv/videos/106828666"
+    },
+    {
+      "description": "Kokuho VS Curedents",
+      "url": "https://www.twitch.tv/videos/106828860"
+    },
+    {
+      "description": "MrTeina VS MrPopoche",
+      "url": "https://www.twitch.tv/videos/107073233"
+    },
+    {
+      "description": "Kokuho VS Greed",
+      "url": "https://www.twitch.tv/videos/107073421"
+    },
+    {
+      "description": "Cassebrique VS Cayoche",
+      "url": "https://www.twitch.tv/videos/107073590"
+    },
+    {
+      "description": "Neness VS Majingrams",
+      "url": "https://www.twitch.tv/videos/107265381"
+    },
+    {
+      "description": "Hyperjaja VS Kokuho",
+      "url": "https://www.twitch.tv/videos/107265552"
+    },
+    {
+      "description": "Leo_ze_tron VS Nariom",
+      "url": "https://www.twitch.tv/videos/107679628"
+    },
+    {
+      "description": "Kokuho VS Neness",
+      "url": "https://www.twitch.tv/videos/108139544"
+    },
+    {
+      "description": "Cayoche VS Kokuho",
+      "url": "https://www.twitch.tv/videos/108139717"
+    },
+    {
+      "description": "Molfried VS IceChaos",
+      "url": "https://www.twitch.tv/videos/108383894"
+    },
+    {
+      "description": "MrPopoche VS IceChaos",
+      "url": "https://www.twitch.tv/videos/108384042"
+    },
+    {
+      "description": "Nariom VS IceChaos",
+      "url": "https://www.twitch.tv/videos/108384278"
+    },
+    {
+      "description": "Cayoche VS IceChaos",
+      "url": "https://www.twitch.tv/videos/108384432"
+    },
+    {
+      "description": "Leo_ze_tron VS Cassebrique",
+      "url": "https://www.twitch.tv/videos/108384563"
+    },
+    {
+      "description": "Cassebrique VS Cayoche",
+      "url": "https://www.twitch.tv/videos/108610644"
+    },
+    {
+      "description": "Leo_ze_tron VS Cayoche",
+      "url": "https://www.twitch.tv/videos/108610784"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Curedents",
+      "score": "2-1"
+    },
+    {
+      "winner": "Massiste2",
+      "loser": "Zazima",
+      "score": "2-0"
+    },
+    {
+      "winner": "Venom",
+      "loser": "Khushas",
+      "score": "2-1"
+    },
+    {
+      "winner": "Neg_Eggs",
+      "loser": "AeroKanzaki",
+      "score": "2-0"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "SergeBenamou31",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "NeNeSSquick",
+      "score": "2-1"
+    },
+    {
+      "winner": "HyperJaja",
+      "loser": "Xemorej",
+      "score": "2-1"
+    },
+    {
+      "winner": "BodyBrest",
+      "loser": "Majingrams",
+      "score": "2-0"
+    },
+    {
+      "winner": "Molfried",
+      "loser": "Tanook_Leduc",
+      "score": "2-0"
+    },
+    {
+      "winner": "Chfou",
+      "loser": "Vin25cent",
+      "score": "2-0"
+    },
+    {
+      "winner": "CasseBrique",
+      "loser": "Thedarkraziel",
+      "score": "2-0"
+    },
+    {
+      "winner": "Noctyan",
+      "loser": "Hikarichan73",
+      "score": "2-1"
+    },
+    {
+      "winner": "Greed__",
+      "loser": "IceChaosDragoon",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "Kanjo",
+      "score": "2-0"
+    },
+    {
+      "winner": "Kokuho",
+      "loser": "Calimero38750",
+      "score": "2-1"
+    },
+    {
+      "winner": "MrTeina",
+      "loser": "Smushis",
+      "score": "2-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Massiste2",
+      "score": "2-0"
+    },
+    {
+      "winner": "Neg_Eggs",
+      "loser": "Venom",
+      "score": "2-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "MrPopoche",
+      "score": "2-0"
+    },
+    {
+      "winner": "HyperJaja",
+      "loser": "BodyBrest",
+      "score": "2-0"
+    },
+    {
+      "winner": "Molfried",
+      "loser": "Chfou",
+      "score": "2-1"
+    },
+    {
+      "winner": "CasseBrique",
+      "loser": "Noctyan",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "Greed__",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrTeina",
+      "loser": "Kokuho",
+      "score": "2-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Neg_Eggs",
+      "score": "2-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "HyperJaja",
+      "score": "2-0"
+    },
+    {
+      "winner": "CasseBrique",
+      "loser": "Molfried",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "MrTeina",
+      "score": "2-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Nariom",
+      "score": "3-1"
+    },
+    {
+      "winner": "CasseBrique",
+      "loser": "Cayoche",
+      "score": "3-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "CasseBrique",
+      "score": "3-1"
+    },
+    {
+      "winner": "Curedents",
+      "loser": "Zazima",
+      "score": "2-1"
+    },
+    {
+      "winner": "AeroKanzaki",
+      "loser": "Khushas",
+      "score": "2-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "SergeBenamou31",
+      "score": "2-1"
+    },
+    {
+      "winner": "Majingrams",
+      "loser": "Xemorej",
+      "score": "2-0"
+    },
+    {
+      "winner": "Tanook_Leduc",
+      "loser": "Vin25cent",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "Thedarkraziel",
+      "score": "2-1"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "Kanjo",
+      "score": "2-1"
+    },
+    {
+      "winner": "Smushis",
+      "loser": "Calimero38750",
+      "score": "2-0"
+    },
+    {
+      "winner": "Kokuho",
+      "loser": "Curedents",
+      "score": "2-1"
+    },
+    {
+      "winner": "Greed__",
+      "loser": "AeroKanzaki",
+      "score": "2-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "Noctyan",
+      "score": "2-0"
+    },
+    {
+      "winner": "Majingrams",
+      "loser": "Chfou",
+      "score": "2-0"
+    },
+    {
+      "winner": "Tanook_Leduc",
+      "loser": "BodyBrest",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "Hikarichan73",
+      "score": "2-0"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "Venom",
+      "score": "2-0"
+    },
+    {
+      "winner": "Massiste2",
+      "loser": "Smushis",
+      "score": "2-1"
+    },
+    {
+      "winner": "Kokuho",
+      "loser": "Greed__",
+      "score": "2-1"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "Majingrams",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "Tanook_Leduc",
+      "score": "2-1"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "Massiste2",
+      "score": "2-1"
+    },
+    {
+      "winner": "Kokuho",
+      "loser": "HyperJaja",
+      "score": "2-1"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "Neg_Eggs",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "MrTeina",
+      "score": "2-0"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "Molfried",
+      "score": "2-0"
+    },
+    {
+      "winner": "Kokuho",
+      "loser": "NeNeSSquick",
+      "score": "2-1"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "MrPopoche",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "Kokuho",
+      "score": "2-0"
+    },
+    {
+      "winner": "IceChaosDragoon",
+      "loser": "Nariom",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "IceChaosDragoon",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "CasseBrique",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "leo_ze_tron",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cayoche",
+      "loser": "leo_ze_tron",
+      "score": "2-1"
+    }
+  ]
+}

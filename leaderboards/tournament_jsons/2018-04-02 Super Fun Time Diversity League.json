@@ -1,0 +1,488 @@
+{
+  "name": "Super Fun Time Diversity League",
+  "challonge_id": "SFT_Solo",
+  "challonge": "https://challonge.com/SFT_Solo; https://challonge.com/fr/SFT_Solo_Round_6",
+  "date": "2018-04-02",
+  "notability": "minor",
+  "organizer": "PassionDrama; TheMoonSage",
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [
+    {
+      "description": "Playlist with all the cast done by bmz_loop",
+      "url": "https://www.twitch.tv/collections/dYrMjaDcIRXrCQ"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Cyber_1",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "Lobsterosity",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "thundo22",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "SergeBenamou31",
+      "score": "3-0"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "MoucheronQuipet",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "GamonymousRC",
+      "score": "3-0"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "mgln",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Alkehl",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "AshD0wn",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "RedstoneMenace",
+      "score": "3-2"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "IrgendeinMist",
+      "score": "3-2"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "klover48",
+      "score": "3-2"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "ElysianDevil",
+      "score": "3-1"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "BindingOfGed",
+      "score": "3-0"
+    },
+    {
+      "winner": "Thoday",
+      "loser": "fruitsofhate",
+      "score": "3-0"
+    },
+    {
+      "winner": "fruitsofhate",
+      "loser": "mgln",
+      "score": "3-0"
+    },
+    {
+      "winner": "GamonymousRC",
+      "loser": "BindingOfGed",
+      "score": "3-0"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "ElysianDevil",
+      "score": "3-2"
+    },
+    {
+      "winner": "klover48",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "SergeBenamou31",
+      "loser": "IrgendeinMist",
+      "score": "3-0"
+    },
+    {
+      "winner": "thundo22",
+      "loser": "RedstoneMenace",
+      "score": "3-0"
+    },
+    {
+      "winner": "Lobsterosity",
+      "loser": "AshD0wn",
+      "score": "3-2"
+    },
+    {
+      "winner": "Alkehl",
+      "loser": "Hikarichan73",
+      "score": "3-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Thoday",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "StoneAgeMarcus",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "ReidMercury__",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "NeNeSSquick",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "Shigan_",
+      "score": "3-1"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "fruitsofhate",
+      "score": "3-0"
+    },
+    {
+      "winner": "klover48",
+      "loser": "NeNeSSquick",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Alkehl",
+      "score": "3-0"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "GamonymousRC",
+      "score": "3-1"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "Thoday",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "SergeBenamou31",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "thundo22",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Lobsterosity",
+      "score": "3-0"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "RedstoneMenace",
+      "score": "3-1"
+    },
+    {
+      "winner": "IrgendeinMist",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "ElysianDevil",
+      "loser": "mgln",
+      "score": "3-1"
+    },
+    {
+      "winner": "AshD0wn",
+      "loser": "BindingOfGed",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "thereisnofuture",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-1"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "CrafterLynx",
+      "score": "3-1"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "Cyber_1",
+      "score": "3-1"
+    },
+    {
+      "winner": "GamonymousRC",
+      "loser": "IrgendeinMist",
+      "score": "3-1"
+    },
+    {
+      "winner": "SergeBenamou31",
+      "loser": "fruitsofhate",
+      "score": "3-2"
+    },
+    {
+      "winner": "AshD0wn",
+      "loser": "thundo22",
+      "score": "3-1"
+    },
+    {
+      "winner": "Lobsterosity",
+      "loser": "Hikarichan73",
+      "score": "3-2"
+    },
+    {
+      "winner": "Thoday",
+      "loser": "ElysianDevil",
+      "score": "3-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "Alkehl",
+      "score": "3-0"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "RedstoneMenace",
+      "score": "3-1"
+    },
+    {
+      "winner": "mgln",
+      "loser": "BindingOfGed",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "HauntedQuest",
+      "score": "3-0"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "klover48",
+      "score": "3-0"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "CrafterLynx",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "ReidMercury__",
+      "score": "3-0"
+    },
+    {
+      "winner": "leo_ze_tron",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Zamiell",
+      "score": "3-0"
+    },
+    {
+      "winner": "Lobsterosity",
+      "loser": "Thoday",
+      "score": "3-2"
+    },
+    {
+      "winner": "GamonymousRC",
+      "loser": "Ou_J",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "AshD0wn",
+      "score": "3-1"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "SergeBenamou31",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "NeNeSSquick",
+      "score": "3-0"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "klover48",
+      "score": "3-0"
+    },
+    {
+      "winner": "fruitsofhate",
+      "loser": "xUnhingedMoose",
+      "score": "3-2"
+    },
+    {
+      "winner": "thundo22",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    },
+    {
+      "winner": "mgln",
+      "loser": "IrgendeinMist",
+      "score": "3-2"
+    },
+    {
+      "winner": "RedstoneMenace",
+      "loser": "BindingOfGed",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "StoneAgeMarcus",
+      "score": "3-0"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "SlashSP",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "thereisnofuture",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "leo_ze_tron",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Shigan_",
+      "score": "3-1"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "leo_ze_tron",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Cyber_1",
+      "score": "3-2"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "thereisnofuture",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "StoneAgeMarcus",
+      "score": "3-1"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "GamonymousRC",
+      "score": "3-1"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Lobsterosity",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Thoday",
+      "score": "3-2"
+    },
+    {
+      "winner": "SergeBenamou31",
+      "loser": "klover48",
+      "score": "3-2"
+    },
+    {
+      "winner": "thundo22",
+      "loser": "NeNeSSquick",
+      "score": "3-1"
+    },
+    {
+      "winner": "AshD0wn",
+      "loser": "mgln",
+      "score": "3-1"
+    },
+    {
+      "winner": "fruitsofhate",
+      "loser": "Hikarichan73",
+      "score": "3-1"
+    },
+    {
+      "winner": "IrgendeinMist",
+      "loser": "RedstoneMenace",
+      "score": "3-0"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "BindingOfGed",
+      "score": "3-2"
+    }
+  ]
+}

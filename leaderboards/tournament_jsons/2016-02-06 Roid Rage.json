@@ -1,0 +1,191 @@
+{
+  "name": "Roid Rage",
+  "challonge_id": "roidrage",
+  "challonge": "http://challonge.com/roidrage",
+  "date": "2016-02-06",
+  "notability": "major",
+  "organizer": "SSundee",
+  "ruleset": "mixed",
+  "description": "Tournament where viewers picked the ruleset, seeds for the seeded match ups were pre-picked",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/41368611"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/41899703"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "giraffefizzoid",
+      "loser": "imwaytopunny",
+      "score": "3-1",
+      "ruleset_per_round": [
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "imwaytopunny",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "seeded"
+        }
+      ]
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Hyphen_ated",
+      "score": "3-0",
+      "ruleset_per_round": [
+        {
+          "winner": "Zamiell",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "Zamiell",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "Zamiell",
+          "ruleset": "unseeded"
+        }
+      ]
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "antizoubilamaka",
+      "score": "3-0",
+      "ruleset_per_round": [
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "seeded"
+        }
+      ]
+    },
+    {
+      "winner": "Diabetech",
+      "loser": "Cyber_1",
+      "score": "3-2",
+      "ruleset_per_round": [
+        {
+          "winner": "Diabetech",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "Cyber_1",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "Diabetech",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "Cyber_1",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "Diabetech",
+          "ruleset": "unseeded"
+        }
+      ]
+    },
+    {
+      "winner": "giraffefizzoid",
+      "loser": "Zamiell",
+      "score": "3-1",
+      "ruleset_per_round": [
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "Zamiell",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "seeded"
+        }
+      ]
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Diabetech",
+      "score": "3-2",
+      "ruleset_per_round": [
+        {
+          "winner": "Diabetech",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "Diabetech",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "unseeded"
+        }
+      ]
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "giraffefizzoid",
+      "score": "4-2",
+      "ruleset_per_round": [
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "giraffefizzoid",
+          "ruleset": "unseeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "seeded"
+        },
+        {
+          "winner": "ProblemsIRL",
+          "ruleset": "unseeded"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "name": "BOILeR 2017",
+  "challonge_id": "boiler2017",
+  "challonge": "http://challonge.com/boiler2017",
+  "date": "2017-03-02",
+  "notability": "major",
+  "organizer": "Crumps2",
+  "ruleset": "unseeded",
+  "description": "Unseeded ruleset with 5 resets per round limit.",
+  "videos": [
+    {
+      "description": "(Practice) KazooieGirl vs FireOnEarth Race 1",
+      "url": "https://www.twitch.tv/videos/123669636"
+    },
+    {
+      "description": "(Practice) KazooieGirl vs FireOnEarth Race 2",
+      "url": "https://www.twitch.tv/videos/123669873"
+    },
+    {
+      "description": "(Practice) KazooieGirl vs FireOnEarth Race 3",
+      "url": "https://www.twitch.tv/videos/123670110"
+    },
+    {
+      "description": "(Practice) KazooieGirl vs FireOnEarth Race 4",
+      "url": "https://www.twitch.tv/videos/123670205"
+    },
+    {
+      "description": "(Practice) KazooieGirl vs FireOnEarth Race 5",
+      "url": "https://www.twitch.tv/videos/123670449"
+    },
+    {
+      "description": "(Practice) RevenantGamer vs AkitakaTsuya Race 1",
+      "url": "https://www.twitch.tv/videos/123670690"
+    },
+    {
+      "description": "(Practice) RevenantGamer vs AkitakaTsuya Race 2",
+      "url": "https://www.twitch.tv/videos/123670854"
+    },
+    {
+      "description": "(Practice) RevenantGamer vs AkitakaTsuya Race 3",
+      "url": "https://www.twitch.tv/videos/123671070"
+    },
+    {
+      "description": "(Practice) RevenantGamer vs AkitakaTsuya Race 4",
+      "url": "https://www.twitch.tv/videos/123671252"
+    },
+    {
+      "description": "(Practice) RevenantGamer vs AkitakaTsuya Race 5",
+      "url": "https://www.twitch.tv/videos/123671326"
+    },
+    {
+      "description": "(Practice) FireOnEarth vs ElvenCloud Race 1",
+      "url": "https://www.twitch.tv/videos/123671559"
+    },
+    {
+      "description": "(Practice) FireOnEarth vs ElvenCloud Race 2",
+      "url": "https://www.twitch.tv/videos/123671672"
+    },
+    {
+      "description": "(Practice) FireOnEarth vs ElvenCloud Race 3",
+      "url": "https://www.twitch.tv/videos/123671793"
+    },
+    {
+      "description": "(Practice) FireOnEarth vs ElvenCloud Race 4",
+      "url": "https://www.twitch.tv/videos/123671963"
+    },
+    {
+      "description": "(Practice) FireOnEarth vs ElvenCloud Race 5",
+      "url": "https://www.twitch.tv/videos/123672094"
+    },
+    {
+      "description": "KazooieGirl vs AkitakaTsuya",
+      "url": "https://www.twitch.tv/videos/125920178"
+    },
+    {
+      "description": "ProblemsIRL vs iKasperr",
+      "url": "https://www.twitch.tv/videos/125920665"
+    },
+    {
+      "description": "FireOnEarth vs ThisGuyIsBarry",
+      "url": "https://www.twitch.tv/videos/128587607"
+    },
+    {
+      "description": "Elvencloud vs Cyber_1",
+      "url": "https://www.twitch.tv/videos/128587733"
+    },
+    {
+      "description": "SickScot vs Shigan_",
+      "url": "https://www.twitch.tv/videos/128588123"
+    },
+    {
+      "description": "SlashSP vs ReVenantGamer",
+      "url": "https://www.twitch.tv/videos/128588261"
+    },
+    {
+      "description": "Ceehe vs CrafterLynx",
+      "url": "https://www.twitch.tv/videos/129141864"
+    },
+    {
+      "description": "AdmiralBahroo vs REXMoreOP",
+      "url": "https://www.twitch.tv/videos/129142350"
+    },
+    {
+      "description": "KazooieGirl vs REXMoreOP",
+      "url": "https://www.twitch.tv/videos/130585455"
+    },
+    {
+      "description": "SlashSP vs Cyber_1",
+      "url": "https://www.twitch.tv/videos/130585607"
+    },
+    {
+      "description": "CrafterLynx vs Shigan_",
+      "url": "https://www.twitch.tv/videos/132312277"
+    },
+    {
+      "description": "ProblemsIRL vs ThisGuyIsBarry",
+      "url": "https://www.twitch.tv/videos/132312647"
+    },
+    {
+      "description": "CrafterLynx vs SlashSP (part 1)",
+      "url": "https://www.twitch.tv/videos/136166467"
+    },
+    {
+      "description": "CrafterLynx vs SlashSP (part 2)",
+      "url": "https://www.twitch.tv/videos/136167271"
+    },
+    {
+      "description": "REXMoreop vs ThisGuyIsBarry",
+      "url": "https://www.twitch.tv/videos/136167020"
+    },
+    {
+      "description": "CrafterLynx vs REXMoreOP",
+      "url": "https://www.twitch.tv/videos/136170157"
+    },
+    {
+      "description": "SlashSP vs ThisGuyIsBarry",
+      "url": "https://www.twitch.tv/videos/136170419"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "thisguyisbarry",
+      "loser": "FireOnEarth",
+      "score": "3-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "iKasperr",
+      "score": "3-0"
+    },
+    {
+      "winner": "KazooieGirl",
+      "loser": "AkitakaTsuya",
+      "score": "3-0"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "AdmiralBahroo",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "ReVenantGamer",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "elvencloud",
+      "score": "3-0"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "itzasickscot",
+      "score": "3-0"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "ProblemsIRL",
+      "score": "3-1"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "KazooieGirl",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Cyber_1",
+      "score": "3-2"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "Shigan_",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "REXmoreOP",
+      "score": "3-2"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "CrafterLynx",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "SlashSP",
+      "score": "3-1"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "REXmoreOP",
+      "score": "3-1"
+    }
+  ]
+}
