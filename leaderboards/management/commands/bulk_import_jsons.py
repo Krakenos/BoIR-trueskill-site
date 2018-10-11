@@ -21,7 +21,7 @@ class Command(BaseCommand):
                 challonge_url=tournament_data['challonge'],
                 date=tournament_data['date'],
                 notability=tournament_data['notability'],
-                ruleset=tournament_data['ruleset'],
+                ruleset=leaderboards.models.Ruleset.objects.get_or_create(ruleset=tournament_data['ruleset'])[0],
                 description=tournament_data['description']
             )
             new_tournament.save()
@@ -34,7 +34,9 @@ class Command(BaseCommand):
                 if 'description' in match:
                     db_match.description = match['description']
                 if 'ruleset' in match:
-                    db_match.ruleset = match['ruleset']
+                    db_match.ruleset = leaderboards.models.Ruleset.objects.get_or_create(
+                        ruleset=match['ruleset'])[0]
+                db_match.save()
             new_tournament.save()
             self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
