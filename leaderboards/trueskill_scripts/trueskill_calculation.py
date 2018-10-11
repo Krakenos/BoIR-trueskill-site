@@ -1,23 +1,146 @@
 import trueskill
-from leaderboards.models import Tournament
+from leaderboards.models import Tournament, Leaderboard, Player
+from collections import defaultdict
 
 
 class TrueskillCalculations:
-    tournament_limit = 2  # Hides people who played low amount of tourneys from the leaderboards
-    seeded_multiplier = 4
-    mixed_multiplier = 2
+
+    racers = defaultdict(dict)
+    seeded_racers = defaultdict(dict)
+    unseeded_racers = defaultdict(dict)
+
+    def __init__(self, tournament_limit=2, seeded_multiplier=4, mixed_multiplier=2):
+        """
+        :param tournament_limit: Limit of the tournaments that prevent player to show up in the leaderboard
+        :param seeded_multiplier: Determines how much impact have seeded races in mixed leaderboard
+        :param mixed_multiplier:  Determines how much impact have mixed races in the leaderboard
+        """
+        self.mixed_multiplier = mixed_multiplier
+        self.seeded_multiplier = seeded_multiplier
+        self.tournament_limit = tournament_limit
 
     def create_leaderboards(self):
         for tournament in Tournament.objects.all().order_by('date'):
-            if tournament.ruleset == 'other':
-                continue
-            elif tournament.ruleset == 'seeded':
-                for _ in range(self.seeded_multiplier):
+            players_in_tourney = []
+            players_in_seeded_tourney = []
+            players_in_unseeded_tourney = []
+            for match in tournament.match_set.all():
+                ruleset = tournament.ruleset.ruleset
+                if ruleset == 'other':
                     continue
-            elif tournament.ruleset == 'mixed':
-                for _ in range(self.mixed_multiplier):
+                elif ruleset == 'team':
                     continue
-            elif tournament.ruleset == 'multiple':
-                continue
-            else:
-                continue
+                elif ruleset == 'seeded':
+                    self.initiate_player(match, players_in_tourney, seeded=players_in_seeded_tourney)
+                    for _ in range(self.seeded_multiplier):
+                        self.calculate_rating(match, self.racers)
+                    self.calculate_rating(match, self.seeded_racers)
+                elif ruleset == 'mixed':
+                    self.initiate_player(match, players_in_tourney, unseeded=players_in_unseeded_tourney)
+                    for _ in range(self.mixed_multiplier):
+                        self.calculate_rating(match, self.racers)
+                    self.calculate_rating(match, self.unseeded_racers)
+                elif ruleset == 'multiple':
+                    if match.ruleset is not None:
+                        if match.ruleset.ruleset == 'seeded':
+                            self.initiate_player(match, players_in_tourney, seeded=players_in_seeded_tourney)
+                            for _ in range(self.seeded_multiplier):
+                                self.calculate_rating(match, self.racers)
+                            self.calculate_rating(match, self.seeded_racers)
+                        else:
+                            self.initiate_player(match, players_in_tourney, unseeded=players_in_unseeded_tourney)
+                            self.calculate_rating(match, self.racers)
+                            self.calculate_rating(match, self.unseeded_racers)
+                else:  # unseeded and diversity
+                    self.initiate_player(match, players_in_tourney, unseeded=players_in_unseeded_tourney)
+                    self.calculate_rating(match, self.racers)
+                    self.calculate_rating(match, self.unseeded_racers)
+        mixed_leaderboard = self.calculate_places(self.racers)
+        unseeded_leaderboard = self.calculate_places(self.unseeded_racers)
+        seeded_learderboard = self.calculate_places(self.seeded_racers)
+        self.export_leaderboard_to_db('mixed', mixed_leaderboard)
+        self.export_leaderboard_to_db('unseeded', unseeded_leaderboard)
+        self.export_leaderboard_to_db('seeded', seeded_learderboard)
+
+    @staticmethod
+    def export_leaderboard_to_db(leaderboard_type: str, leaderboard_list):
+        for record in leaderboard_list:
+            player = Leaderboard.objects.get_or_create(player=Player.objects.get(name=record['name']),
+                                                       leaderboard_type=leaderboard_type)[0]
+            player.placement = record['place']
+            player.exposure = record['exposure']
+            player.mu = record['mu']
+            player.sigma = record['sigma']
+            player.tournaments_played = record['tournaments_played']
+            player.matches_played = record['matches_played']
+            player.save()
+
+    def calculate_places(self, racers_dict):
+        # Creating leaderboard, sorting by exposure value
+        leaderboards_list = [
+            {
+                'name': key,
+                'tournaments_played': value['tournaments_played'],
+                'matches_played': value['matches_played'],
+                'exposure': value['rating'].exposure,
+                'mu': value['rating'].mu,
+                'sigma': value['rating'].sigma
+            } for key, value in racers_dict.items() if value['tournaments_played'] >= self.tournament_limit
+        ]
+        leaderboards_list.sort(key=lambda x: x['exposure'], reverse=True)
+        for place, player in enumerate(leaderboards_list):
+            player['place'] = place + 1
+        return leaderboards_list
+
+    def initiate_player(self, match, players_in_tourney, **kwargs):
+        self.check_players(match, self.racers)
+        self.increment_tourney_played(match, self.racers, players_in_tourney)
+        self.increment_match_played(match, self.racers)
+        for key, value in kwargs.items():
+            if key == 'unseeded':
+                self.check_players(match, self.unseeded_racers)
+                self.increment_tourney_played(match, self.unseeded_racers, value)
+                self.increment_match_played(match, self.unseeded_racers)
+            elif key == 'seeded':
+                self.check_players(match, self.seeded_racers)
+                self.increment_tourney_played(match, self.seeded_racers, value)
+                self.increment_match_played(match, self.seeded_racers)
+
+    @staticmethod
+    def check_players(match, racers_dict):
+        winner = match.winner.name
+        loser = match.loser.name
+        if winner not in racers_dict:
+            racers_dict[winner]['rating'] = trueskill.Rating(25)
+            racers_dict[winner]['matches_played'] = 0
+            racers_dict[winner]['tournaments_played'] = 0
+        if loser not in racers_dict:
+            racers_dict[loser]['rating'] = trueskill.Rating(25)
+            racers_dict[loser]['matches_played'] = 0
+            racers_dict[loser]['tournaments_played'] = 0
+
+    @staticmethod
+    def increment_tourney_played(match, racers_dict, tourney_players):
+        winner = match.winner.name
+        loser = match.loser.name
+        if winner not in tourney_players:
+            tourney_players.append(winner)
+            racers_dict[winner]['tournaments_played'] += 1
+        if loser not in tourney_players:
+            tourney_players.append(loser)
+            racers_dict[loser]['tournaments_played'] += 1
+
+    @staticmethod
+    def increment_match_played(match, racers_dict):
+        winner = match.winner.name
+        loser = match.loser.name
+        racers_dict[winner]['matches_played'] += 1
+        racers_dict[loser]['matches_played'] += 1
+
+    @staticmethod
+    def calculate_rating(match, racers_dict):
+        winner = match.winner.name
+        loser = match.loser.name
+        if match.score != 'draw':
+            racers_dict[winner]['rating'], racers_dict[loser]['rating'] = \
+                trueskill.rate_1vs1(racers_dict[winner]['rating'], racers_dict[loser]['rating'])

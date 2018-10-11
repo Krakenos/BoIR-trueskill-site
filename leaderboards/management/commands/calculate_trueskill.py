@@ -6,5 +6,5 @@ class Command(BaseCommand):
     help = 'test command'
 
     def handle(self, *args, **options):
-        TrueskillCalculations.create_leaderboards()
+        TrueskillCalculations().create_leaderboards()
 
