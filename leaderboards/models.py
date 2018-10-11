@@ -3,7 +3,7 @@ from django.conf import settings
 
 
 class Player(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         return self.name
@@ -122,11 +122,11 @@ class RulesetPerRound(models.Model):  # Used to store individual rounds in mixed
 
 class Leaderboard(models.Model):
     leaderboard_type = models.CharField(max_length=200)
-    placement = models.IntegerField()
+    placement = models.IntegerField(null=True)
     player = models.ForeignKey(Player, on_delete=models.CASCADE)
-    exposure = models.FloatField()  # Default sorting value
-    mu = models.FloatField()
-    sigma = models.FloatField()
+    exposure = models.FloatField(null=True)  # Default sorting value
+    mu = models.FloatField(null=True)
+    sigma = models.FloatField(null=True)
     tournaments_played = models.IntegerField(default=0)
     matches_played = models.IntegerField(default=0)
 
