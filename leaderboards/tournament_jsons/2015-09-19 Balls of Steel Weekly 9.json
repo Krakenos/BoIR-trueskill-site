@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/bosweekly9",
   "date": "2015-09-19",
   "notability": "minor",
-  "organizer": "Diabetech",
+  "organizer": ["Diabetech"],
   "ruleset": "unseeded",
   "description": "",
   "videos": [],

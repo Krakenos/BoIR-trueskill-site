@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/bosweekly7",
   "date": "2015-08-22",
   "notability": "minor",
-  "organizer": "Diabetech",
+  "organizer": ["Diabetech"],
   "ruleset": "diversity",
   "description": "",
   "videos": [],

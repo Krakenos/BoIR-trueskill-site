@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/IoTR3_unseeded_finals",
   "date": "2018-04-07",
   "notability": "major",
-  "organizer": "xUnhingedMoose",
+  "organizer": ["xUnhingedMoose"],
   "ruleset": "unseeded",
   "description": "",
   "videos": [],

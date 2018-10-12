@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/P_Party",
   "date": "2017-08-19",
   "notability": "minor",
-  "organizer": "antizoubilamaka",
+  "organizer": ["antizoubilamaka"],
   "ruleset": "seeded",
   "description": "",
   "videos": [

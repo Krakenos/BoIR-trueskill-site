@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/tournoipandorasbox",
   "date": "2016-10-15",
   "notability": "minor",
-  "organizer": "LaTaupeFR",
+  "organizer": ["LaTaupeFR"],
   "ruleset": "unseeded",
   "description": "",
   "videos": [],

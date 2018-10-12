@@ -4,7 +4,7 @@
   "challonge": "http://tboi.challonge.com/2017",
   "date": "2017-10-31",
   "notability": "minor",
-  "organizer": "Speedgaming/Xelnas",
+  "organizer": ["Speedgaming", "Xelnas"],
   "ruleset": "seeded",
   "description": "",
   "videos": [

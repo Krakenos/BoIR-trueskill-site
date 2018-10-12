@@ -4,7 +4,7 @@
   "challonge": "",
   "date": "2018-07-01",
   "notability": "minor",
-  "organizer": "StoneAgeMarcus",
+  "organizer": ["StoneAgeMarcus"],
   "ruleset": "multiple",
   "description": "Team based tournament, where opponents face each other in 3 different rulesets (seeded, unseeded, diversity)",
   "videos": [],

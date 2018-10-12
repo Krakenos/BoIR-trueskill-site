@@ -4,7 +4,7 @@
   "challonge": "https://challonge.com/SFT_Team_Finals",
   "date": "2018-05-20",
   "notability": "minor",
-  "organizer": "PassionDrama; TheMoonSage",
+  "organizer": ["PassionDrama", "TheMoonSage"],
   "ruleset": "other",
   "description": "",
   "videos": [

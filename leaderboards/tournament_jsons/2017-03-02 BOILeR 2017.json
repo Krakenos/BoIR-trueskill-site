@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/boiler2017",
   "date": "2017-03-02",
   "notability": "major",
-  "organizer": "Crumps2",
+  "organizer": ["Crumps2"],
   "ruleset": "unseeded",
   "description": "Unseeded ruleset with 5 resets per round limit.",
   "videos": [

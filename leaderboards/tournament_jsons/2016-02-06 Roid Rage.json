@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/roidrage",
   "date": "2016-02-06",
   "notability": "major",
-  "organizer": "SSundee",
+  "organizer": ["SSundee"],
   "ruleset": "mixed",
   "description": "Tournament where viewers picked the ruleset, seeds for the seeded match ups were pre-picked",
   "videos": [

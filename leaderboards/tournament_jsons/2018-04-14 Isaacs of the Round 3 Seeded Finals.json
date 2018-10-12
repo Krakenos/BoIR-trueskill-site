@@ -4,7 +4,7 @@
   "challonge": "https://challonge.com/IoTR3_seeded_finals",
   "date": "2018-04-14",
   "notability": "major",
-  "organizer": "xUnhingedMoose",
+  "organizer": ["xUnhingedMoose"],
   "ruleset": "seeded",
   "description": "",
   "videos": [],

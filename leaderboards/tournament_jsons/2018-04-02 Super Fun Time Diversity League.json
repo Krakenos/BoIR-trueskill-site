@@ -4,7 +4,7 @@
   "challonge": "https://challonge.com/SFT_Solo; https://challonge.com/fr/SFT_Solo_Round_6",
   "date": "2018-04-02",
   "notability": "minor",
-  "organizer": "PassionDrama; TheMoonSage",
+  "organizer": ["PassionDrama", "TheMoonSage"],
   "ruleset": "diversity",
   "description": "",
   "videos": [

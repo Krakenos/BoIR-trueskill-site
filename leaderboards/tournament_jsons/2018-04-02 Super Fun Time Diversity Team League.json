@@ -4,7 +4,7 @@
   "challonge": "https://challonge.com/SFT_Team",
   "date": "2018-04-02",
   "notability": "minor",
-  "organizer": "PassionDrama; TheMoonSage",
+  "organizer": ["PassionDrama", "TheMoonSage"],
   "ruleset": "other",
   "description": "",
   "videos": [

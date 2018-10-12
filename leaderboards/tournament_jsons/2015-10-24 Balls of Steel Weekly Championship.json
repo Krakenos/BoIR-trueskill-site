@@ -4,7 +4,7 @@
   "challonge": "http://challonge.com/boschamp",
   "date": "2015-10-24",
   "notability": "major",
-  "organizer": "Diabetech",
+  "organizer": ["Diabetech"],
   "ruleset": "unseeded",
   "description": "",
   "videos": [],

@@ -4,7 +4,7 @@
   "challonge": "https://challonge.com/PageantBoy3",
   "date": "2018-06-01",
   "notability": "minor",
-  "organizer": "StoneAgeMarcus",
+  "organizer": ["StoneAgeMarcus"],
   "ruleset": "other",
   "description": "A weekend tournament with a twist -- builds are more important than speed",
   "videos": [
