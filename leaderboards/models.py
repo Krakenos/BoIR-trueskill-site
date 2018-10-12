@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
 
 
 class Player(models.Model):
@@ -47,6 +48,13 @@ class Tournament(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None, create_leaderboards=False):
+        super().save()
+        if create_leaderboards:
+            TrueskillCalculations(tournament_model=self.__class__, leaderboard_model=Leaderboard,
+                                  player_model=Player).create_leaderboards()
 
 
 class Team(models.Model):

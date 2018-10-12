@@ -42,7 +42,7 @@ class Command(BaseCommand):
                 db_match.ruleset = leaderboards.models.Ruleset.objects.get_or_create(
                     ruleset=match['ruleset'])[0]
             db_match.save()
-        new_tournament.save()
+        new_tournament.save(create_leaderboards=True)
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
     def check_player_in_db(self, player_name):

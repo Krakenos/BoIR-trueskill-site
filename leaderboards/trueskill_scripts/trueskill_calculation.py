@@ -1,5 +1,4 @@
 import trueskill
-from leaderboards.models import Tournament, Leaderboard, Player
 from collections import defaultdict
 
 
@@ -9,18 +8,25 @@ class TrueskillCalculations:
     seeded_racers = defaultdict(dict)
     unseeded_racers = defaultdict(dict)
 
-    def __init__(self, tournament_limit=2, seeded_multiplier=4, mixed_multiplier=2):
+    def __init__(self, tournament_limit=2, seeded_multiplier=4, mixed_multiplier=2, tournament_model=object,
+                 leaderboard_model=object, player_model=object):
         """
+        :type player_model: Model containing players
+        :type leaderboard_model: Model in which leaderboard is created
+        :type tournament_model: Model containing all tournaments
         :param tournament_limit: Limit of the tournaments that prevent player to show up in the leaderboard
         :param seeded_multiplier: Determines how much impact have seeded races in mixed leaderboard
         :param mixed_multiplier:  Determines how much impact have mixed races in the leaderboard
         """
+        self.tournament = tournament_model
+        self.leaderboard = leaderboard_model
+        self.player = player_model
         self.mixed_multiplier = mixed_multiplier
         self.seeded_multiplier = seeded_multiplier
         self.tournament_limit = tournament_limit
 
     def create_leaderboards(self):
-        for tournament in Tournament.objects.all().order_by('date'):
+        for tournament in self.tournament.objects.all().order_by('date'):
             players_in_tourney = []
             players_in_seeded_tourney = []
             players_in_unseeded_tourney = []
@@ -62,11 +68,10 @@ class TrueskillCalculations:
         self.export_leaderboard_to_db('unseeded', unseeded_leaderboard)
         self.export_leaderboard_to_db('seeded', seeded_learderboard)
 
-    @staticmethod
-    def export_leaderboard_to_db(leaderboard_type: str, leaderboard_list):
+    def export_leaderboard_to_db(self, leaderboard_type: str, leaderboard_list):
         for record in leaderboard_list:
-            player = Leaderboard.objects.get_or_create(player=Player.objects.get(name=record['name']),
-                                                       leaderboard_type=leaderboard_type)[0]
+            player = self.leaderboard.objects.get_or_create(player=self.player.objects.get(name=record['name']),
+                                                            leaderboard_type=leaderboard_type)[0]
             player.placement = record['place']
             player.exposure = record['exposure']
             player.mu = record['mu']

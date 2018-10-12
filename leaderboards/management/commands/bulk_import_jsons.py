@@ -4,6 +4,7 @@ import json
 from django.conf import settings
 import glob
 import os
+from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
 
 
 class Command(BaseCommand):
@@ -39,7 +40,9 @@ class Command(BaseCommand):
                 db_match.save()
             new_tournament.save()
             self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
-
+        TrueskillCalculations(tournament_model=leaderboards.models.Tournament,
+                              leaderboard_model=leaderboards.models.Leaderboard,
+                              player_model=leaderboards.models.Player).create_leaderboards()
         self.stdout.write(self.style.SUCCESS(f"Successfully added all tournaments"))
 
     @staticmethod
