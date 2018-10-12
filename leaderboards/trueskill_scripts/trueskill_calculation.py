@@ -11,9 +11,9 @@ class TrueskillCalculations:
     def __init__(self, tournament_limit=2, seeded_multiplier=4, mixed_multiplier=2, tournament_model=object,
                  leaderboard_model=object, player_model=object):
         """
-        :type player_model: Model containing players
-        :type leaderboard_model: Model in which leaderboard is created
-        :type tournament_model: Model containing all tournaments
+        :param player_model: Model containing players
+        :param leaderboard_model: Model in which leaderboard is created
+        :param tournament_model: Model containing all tournaments
         :param tournament_limit: Limit of the tournaments that prevent player to show up in the leaderboard
         :param seeded_multiplier: Determines how much impact have seeded races in mixed leaderboard
         :param mixed_multiplier:  Determines how much impact have mixed races in the leaderboard
