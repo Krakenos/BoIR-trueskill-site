@@ -21,7 +21,7 @@ class PlayerStat(models.Model):
 
 class Ruleset(models.Model):
     ruleset = models.CharField(max_length=200)
-    description = models.CharField(max_length=400, null=True)
+    description = models.CharField(max_length=400, null=True, blank=True)
 
     def __str__(self):
         return self.ruleset
@@ -37,14 +37,14 @@ class PlayerAlias(models.Model):
 
 class Tournament(models.Model):
     name = models.CharField(max_length=200)
-    challonge_id = models.CharField(max_length=200, null=True)
-    challonge_url = models.URLField(null=True)
-    organizers = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    challonge_id = models.CharField(max_length=200, null=True, blank=True)
+    challonge_url = models.URLField(null=True, blank=True)
+    organizers = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True)
     date = models.DateField()
     notability = models.CharField(max_length=200)
-    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=True)
-    description = models.CharField(max_length=400, null=True)
-    winner = models.ForeignKey(Player, on_delete=models.CASCADE, null=True)
+    ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
+    description = models.CharField(max_length=400, null=True, blank=True)
+    winner = models.ForeignKey(Player, null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -97,9 +97,9 @@ class Match(models.Model):
     winner = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='wins')
     loser = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='loses')
     score = models.CharField(max_length=200)
-    ruleset = models.ForeignKey(Ruleset, null=True, on_delete=models.CASCADE)
-    video = models.URLField(null=True)  # If specific match has it's own vod, this is the field to use
-    description = models.CharField(max_length=200, null=True)  # Description for forfeits etc
+    ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
+    video = models.URLField(null=True, blank=True)  # If specific match has it's own vod, this is the field to use
+    description = models.CharField(max_length=200, null=True, blank=True)  # Description for forfeits etc
 
     def __str__(self):
         return f'{self.tournament}: {self.winner} vs {self.loser}'
@@ -110,9 +110,9 @@ class TeamMatch(models.Model):
     winner = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='wins')
     loser = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='loses')
     score = models.CharField(max_length=200)
-    ruleset = models.ForeignKey(Ruleset, null=True, on_delete=models.CASCADE)
-    video = models.URLField(null=True)  # If specific match has it's own vod, this is the field to use
-    description = models.CharField(max_length=200, null=True)  # Description for forfeits etc
+    ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
+    video = models.URLField(null=True, blank=True)  # If specific match has it's own vod, this is the field to use
+    description = models.CharField(max_length=200, null=True, blank=True)  # Description for forfeits etc
 
     def __str__(self):
         return f'{self.tournament}: {self.winner} vs {self.loser}'
@@ -122,7 +122,7 @@ class RulesetPerRound(models.Model):  # Used to store individual rounds in mixed
     round_number = models.IntegerField()
     match = models.ForeignKey(Match, on_delete=models.CASCADE)
     winner = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='wins_round')
-    ruleset = models.ForeignKey(Ruleset, null=True, on_delete=models.CASCADE)
+    ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.match}: Round {self.round_number}'
