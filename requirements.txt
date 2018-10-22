@@ -1,4 +1,4 @@
 requests
 trueskill
 django
-python-dotenv
+django-environ
