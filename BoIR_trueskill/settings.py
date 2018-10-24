@@ -1,10 +1,12 @@
-import os
 import environ
 
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False),
-    ALLOWED_HOSTS=(list, [])
+    ALLOWED_HOSTS=(list, []),
+    SECURE_SSL_REDIRECT=(bool, True),
+    SESSION_COOKIE_SECURE=(bool, True),
+    CSRF_COOKIE_SECURE=(bool, True)
 )
 BASE_DIR = environ.Path(__file__) - 2
 
@@ -16,9 +18,18 @@ environ.Env.read_env(str(BASE_DIR.path('.env')))
 
 SECRET_KEY = env('SECRET_KEY')
 
+# SSL Stuff
+SECURE_SSL_REDIRECT = env('SECURE_SSL_REDIRECT')
+SESSION_COOKIE_SECURE = env('SESSION_COOKIE_SECURE')
+CSRF_COOKIE_SECURE = env('CSRF_COOKIE_SECURE')
+
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
+
 DEBUG = env('DEBUG')
 
-# Challonge api key, used to import tourname
+# Challonge api key, used to import tournament
 CHALLONGE_API_KEY = env('CHALLONGE_API_KEY')
 
 ALLOWED_HOSTS = env('ALLOWED_HOSTS')
