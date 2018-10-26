@@ -1,0 +1,23 @@
+{
+  "name": "Battle of Kings Showmatch 6",
+  "challonge_id": "",
+  "challonge": "",
+  "date": "2016-07-02",
+  "notability": "minor",
+  "organizer": ["Dea1h"],
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "Dea1h vs Cyber_1",
+      "url": "https://www.twitch.tv/videos/75946734"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Dea1h",
+      "loser": "Cyber_1",
+      "score": "5-2"
+    }
+  ]
+}

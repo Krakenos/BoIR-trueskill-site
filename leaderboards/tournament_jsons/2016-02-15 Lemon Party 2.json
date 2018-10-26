@@ -1,0 +1,1167 @@
+{
+  "name": "Lemon Party 2",
+  "challonge_id": "lemonparty2",
+  "challonge": "http://challonge.com/lemonparty2",
+  "date": "2016-02-15",
+  "notability": "minor",
+  "organizer": ["Zamiell"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "s0cialphobia vs Jminman",
+      "url": "https://www.twitch.tv/videos/46970024"
+    },
+    {
+      "description": "Krakenos vs Scyther159",
+      "url": "https://www.twitch.tv/videos/49227005"
+    },
+    {
+      "description": "ou_j vs tODDlife",
+      "url": "https://www.twitch.tv/videos/47957634"
+    },
+    {
+      "description": "Erbear_ vs ShinyRiolu21",
+      "url": "https://www.twitch.tv/videos/47646970"
+    },
+    {
+      "description": "DKlaww vs PatDog56",
+      "url": "https://www.twitch.tv/videos/47647532"
+    },
+    {
+      "description": "Dea1h vs Antizoubilamaka",
+      "url": "https://www.twitch.tv/videos/47779671"
+    },
+    {
+      "description": "Xelnas vs Staekk",
+      "url": "https://www.twitch.tv/videos/47780434"
+    },
+    {
+      "description": "Zamiell vs Lobsterosity",
+      "url": "https://www.twitch.tv/videos/48450082"
+    },
+    {
+      "description": "Showcase: SlashSP vs ItsScion",
+      "url": "https://www.twitch.tv/videos/48450858"
+    },
+    {
+      "description": "Zamiell vs ItsScion",
+      "url": "https://www.twitch.tv/videos/50886135"
+    },
+    {
+      "description": "SlashSP vs Hyphen_ated",
+      "url": "https://www.twitch.tv/videos/50886412"
+    },
+    {
+      "description": "Antizoubilamaka vs Sillypears",
+      "url": "https://www.twitch.tv/videos/50886546"
+    },
+    {
+      "description": "Dadalo1 vs TheGreatZiggyny",
+      "url": "https://www.twitch.tv/videos/52141965"
+    },
+    {
+      "description": "TyrannasaurusLex vs BMZ_Loop",
+      "url": "https://www.twitch.tv/videos/52142208"
+    },
+    {
+      "description": "Hyphen_ated vs ShinyRiolu21",
+      "url": "https://www.twitch.tv/videos/53366139"
+    },
+    {
+      "description": "NeNessQuick vs Haagiboy88",
+      "url": "https://www.twitch.tv/videos/53366325"
+    },
+    {
+      "description": "Zamiell vs Chronometrics",
+      "url": "https://www.twitch.tv/videos/53366492"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "nicoluwu",
+      "score": "3-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "FireOnEarth",
+      "score": "3-1"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "Haagiboy88",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "FireDead659",
+      "score": "3-1"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "PK_Antifreeze",
+      "score": "3-0"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "Peppicx",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "tODDlife",
+      "score": "3-2"
+    },
+    {
+      "winner": "Chronometrics",
+      "loser": "Varney_93",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Lobsterosity",
+      "score": "3-0"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "Rydyell",
+      "score": "3-1"
+    },
+    {
+      "winner": "dadalo1",
+      "loser": "A_ron_",
+      "score": "3-0"
+    },
+    {
+      "winner": "CaspianCrawdad",
+      "loser": "Vetrina271",
+      "score": "3-0"
+    },
+    {
+      "winner": "Erbear_",
+      "loser": "ShinyRiolu21",
+      "score": "3-1"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "Cmondinger",
+      "score": "3-1"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "GiygasOriginalVan",
+      "score": "3-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "deejumbles",
+      "score": "3-1"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "TheGreatZiggyny",
+      "score": "3-0"
+    },
+    {
+      "winner": "tyrannasauruslex",
+      "loser": "peteyboo",
+      "score": "3-0"
+    },
+    {
+      "winner": "Augo48",
+      "loser": "InvaderTimStreams",
+      "score": "3-0"
+    },
+    {
+      "winner": "Patdog56",
+      "loser": "DKlaww",
+      "score": "3-2"
+    },
+    {
+      "winner": "Myshka1",
+      "loser": "DeadPixelG",
+      "score": "3-0"
+    },
+    {
+      "winner": "Oh_My_Goth_",
+      "loser": "onetwoduy",
+      "score": "3-0"
+    },
+    {
+      "winner": "Staekk",
+      "loser": "Xelnas",
+      "score": "3-2"
+    },
+    {
+      "winner": "sillypears",
+      "loser": "zooksman",
+      "score": "3-0"
+    },
+    {
+      "winner": "s0cialphobia",
+      "loser": "jminman",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "thisguyisbarry",
+      "score": "3-1"
+    },
+    {
+      "winner": "aferalsheep",
+      "loser": "birdie0",
+      "score": "3-1"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Scyther159",
+      "score": "3-2"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "sfan786",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "910dan",
+      "score": "3-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Karolmofnc",
+      "score": "3-0"
+    },
+    {
+      "winner": "Takumashii",
+      "loser": "tunck",
+      "score": "3-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "ThePuffinPunk",
+      "score": "3-2"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "Murrayg1993",
+      "score": "3-2"
+    },
+    {
+      "winner": "Oh_My_Goth_",
+      "loser": "Myshka1",
+      "score": "3-0"
+    },
+    {
+      "winner": "tyrannasauruslex",
+      "loser": "TheMoonSage",
+      "score": "3-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Krakenos",
+      "score": "3-0"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "aferalsheep",
+      "score": "3-0"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "ceehe",
+      "score": "3-0"
+    },
+    {
+      "winner": "Staekk",
+      "loser": "Erbear_",
+      "score": "3-2"
+    },
+    {
+      "winner": "CaspianCrawdad",
+      "loser": "Patdog56",
+      "score": "3-1"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "Augo48",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "ItsScion",
+      "score": "3-2"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "dadalo1",
+      "score": "3-1"
+    },
+    {
+      "winner": "Chronometrics",
+      "loser": "Fisshy_",
+      "score": "3-0"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "gSrV",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "NeNeSSquick",
+      "score": "3-1"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "Takumashii",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "s0cialphobia",
+      "score": "3-2"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "sillypears",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Varney_93",
+      "score": "3-1"
+    },
+    {
+      "winner": "FireDead659",
+      "loser": "A_ron_",
+      "score": "3-0"
+    },
+    {
+      "winner": "TheGreatZiggyny",
+      "loser": "Peppicx",
+      "score": "3-0"
+    },
+    {
+      "winner": "tODDlife",
+      "loser": "InvaderTimStreams",
+      "score": "3-2"
+    },
+    {
+      "winner": "Lobsterosity",
+      "loser": "DKlaww",
+      "score": "3-1"
+    },
+    {
+      "winner": "Xelnas",
+      "loser": "Rydyell",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "Vetrina271",
+      "score": "3-0"
+    },
+    {
+      "winner": "ShinyRiolu21",
+      "loser": "birdie0",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cmondinger",
+      "loser": "Scyther159",
+      "score": "3-1"
+    },
+    {
+      "winner": "GiygasOriginalVan",
+      "loser": "sfan786",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "deejumbles",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "jminman",
+      "score": "3-0"
+    },
+    {
+      "winner": "nicoluwu",
+      "loser": "Karolmofnc",
+      "score": "3-2"
+    },
+    {
+      "winner": "ThePuffinPunk",
+      "loser": "FireOnEarth",
+      "score": "3-0"
+    },
+    {
+      "winner": "Haagiboy88",
+      "loser": "Murrayg1993",
+      "score": "3-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "ThePuffinPunk",
+      "score": "3-1"
+    },
+    {
+      "winner": "Takumashii",
+      "loser": "TheMoonSage",
+      "score": "3-1"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "aferalsheep",
+      "score": "3-0"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "Patdog56",
+      "score": "3-1"
+    },
+    {
+      "winner": "s0cialphobia",
+      "loser": "Augo48",
+      "score": "3-0"
+    },
+    {
+      "winner": "sillypears",
+      "loser": "GiygasOriginalVan",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cmondinger",
+      "loser": "Xelnas",
+      "score": "3-0"
+    },
+    {
+      "winner": "ShinyRiolu21",
+      "loser": "Myshka1",
+      "score": "3-1"
+    },
+    {
+      "winner": "dadalo1",
+      "loser": "TheGreatZiggyny",
+      "score": "3-2"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "Lobsterosity",
+      "score": "3-2"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "tODDlife",
+      "score": "3-1"
+    },
+    {
+      "winner": "FireDead659",
+      "loser": "ItsScion",
+      "score": "3-0"
+    },
+    {
+      "winner": "Haagiboy88",
+      "loser": "NeNeSSquick",
+      "score": "3-0"
+    },
+    {
+      "winner": "Erbear_",
+      "loser": "nicoluwu",
+      "score": "3-1"
+    },
+    {
+      "winner": "Peppicx",
+      "loser": "Varney_93",
+      "score": "3-1"
+    },
+    {
+      "winner": "Rydyell",
+      "loser": "A_ron_",
+      "score": "3-0"
+    },
+    {
+      "winner": "InvaderTimStreams",
+      "loser": "Vetrina271",
+      "score": "3-0"
+    },
+    {
+      "winner": "deejumbles",
+      "loser": "DKlaww",
+      "score": "3-0"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "jminman",
+      "score": "3-2"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "Karolmofnc",
+      "score": "3-0"
+    },
+    {
+      "winner": "Murrayg1993",
+      "loser": "sfan786",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "CaspianCrawdad",
+      "score": "3-2"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "Staekk",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Chronometrics",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Warshoty",
+      "score": "3-2"
+    },
+    {
+      "winner": "Oh_My_Goth_",
+      "loser": "HauntedQuest",
+      "score": "3-0"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "tyrannasauruslex",
+      "score": "3-0"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Hyphen_ated",
+      "score": "3-1"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "ProblemsIRL",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Jerseyrebox",
+      "score": "3-1"
+    },
+    {
+      "winner": "s0cialphobia",
+      "loser": "sillypears",
+      "score": "3-0"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "tyrannasauruslex",
+      "score": "3-0"
+    },
+    {
+      "winner": "CaspianCrawdad",
+      "loser": "Krakenos",
+      "score": "3-1"
+    },
+    {
+      "winner": "gSrV",
+      "loser": "Cmondinger",
+      "score": "3-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "ShinyRiolu21",
+      "score": "3-1"
+    },
+    {
+      "winner": "dadalo1",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "FireDead659",
+      "loser": "Warshoty",
+      "score": "3-2"
+    },
+    {
+      "winner": "Haagiboy88",
+      "loser": "Erbear_",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Takumashii",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "Staekk",
+      "score": "3-0"
+    },
+    {
+      "winner": "Chronometrics",
+      "loser": "Myshka1",
+      "score": "3-2"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "Oh_My_Goth_",
+      "score": "3-0"
+    },
+    {
+      "winner": "Augo48",
+      "loser": "deejumbles",
+      "score": "3-0"
+    },
+    {
+      "winner": "tODDlife",
+      "loser": "Patdog56",
+      "score": "3-0"
+    },
+    {
+      "winner": "aferalsheep",
+      "loser": "Xelnas",
+      "score": "3-0"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "TheMoonSage",
+      "score": "3-2"
+    },
+    {
+      "winner": "Murrayg1993",
+      "loser": "SlashSP",
+      "score": "3-2"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "TheGreatZiggyny",
+      "score": "3-1"
+    },
+    {
+      "winner": "InvaderTimStreams",
+      "loser": "nicoluwu",
+      "score": "3-0"
+    },
+    {
+      "winner": "Lobsterosity",
+      "loser": "birdie0",
+      "score": "3-2"
+    },
+    {
+      "winner": "Rydyell",
+      "loser": "GiygasOriginalVan",
+      "score": "3-0"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "Peppicx",
+      "score": "3-0"
+    },
+    {
+      "winner": "Varney_93",
+      "loser": "ThePuffinPunk",
+      "score": "3-0"
+    },
+    {
+      "winner": "DKlaww",
+      "loser": "A_ron_",
+      "score": "3-0"
+    },
+    {
+      "winner": "Vetrina271",
+      "loser": "sfan786",
+      "score": "3-1"
+    },
+    {
+      "winner": "Karolmofnc",
+      "loser": "jminman",
+      "score": "3-1"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "Thalen22",
+      "score": "3-1"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "fug1t",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "bmz_loop",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "antizoubilamaka",
+      "score": "3-2"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "tODDlife",
+      "score": "3-1"
+    },
+    {
+      "winner": "Rydyell",
+      "loser": "Takumashii",
+      "score": "3-1"
+    },
+    {
+      "winner": "sillypears",
+      "loser": "Murrayg1993",
+      "score": "3-2"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "Erbear_",
+      "score": "3-1"
+    },
+    {
+      "winner": "ShinyRiolu21",
+      "loser": "Krakenos",
+      "score": "3-1"
+    },
+    {
+      "winner": "Staekk",
+      "loser": "InvaderTimStreams",
+      "score": "3-0"
+    },
+    {
+      "winner": "aferalsheep",
+      "loser": "Augo48",
+      "score": "3-2"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "Cmondinger",
+      "score": "3-2"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "Lobsterosity",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Warshoty",
+      "score": "3-0"
+    },
+    {
+      "winner": "Varney_93",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "nicoluwu",
+      "loser": "Myshka1",
+      "score": "3-1"
+    },
+    {
+      "winner": "GiygasOriginalVan",
+      "loser": "Vetrina271",
+      "score": "3-2"
+    },
+    {
+      "winner": "deejumbles",
+      "loser": "TheMoonSage",
+      "score": "3-2"
+    },
+    {
+      "winner": "ThePuffinPunk",
+      "loser": "Patdog56",
+      "score": "3-0"
+    },
+    {
+      "winner": "TheGreatZiggyny",
+      "loser": "DKlaww",
+      "score": "3-1"
+    },
+    {
+      "winner": "Peppicx",
+      "loser": "Xelnas",
+      "score": "3-0"
+    },
+    {
+      "winner": "Karolmofnc",
+      "loser": "birdie0",
+      "score": "3-1"
+    },
+    {
+      "winner": "sfan786",
+      "loser": "jminman",
+      "score": "3-2"
+    },
+    {
+      "winner": "Oh_My_Goth_",
+      "loser": "Haagiboy88",
+      "score": "3-0"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "Chronometrics",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "gSrV",
+      "score": "3-2"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "dadalo1",
+      "score": "3-1"
+    },
+    {
+      "winner": "CaspianCrawdad",
+      "loser": "Jerseyrebox",
+      "score": "3-2"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "FireDead659",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "910dan",
+      "score": "3-2"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "s0cialphobia",
+      "score": "3-0"
+    },
+    {
+      "winner": "NuRelic",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Zamiell",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Chronometrics",
+      "score": "3-0"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "sillypears",
+      "score": "3-1"
+    },
+    {
+      "winner": "ShinyRiolu21",
+      "loser": "ceehe",
+      "score": "3-0"
+    },
+    {
+      "winner": "aferalsheep",
+      "loser": "FireDead659",
+      "score": "3-1"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "dadalo1",
+      "score": "3-1"
+    },
+    {
+      "winner": "s0cialphobia",
+      "loser": "Scyther159",
+      "score": "3-2"
+    },
+    {
+      "winner": "910dan",
+      "loser": "gSrV",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Staekk",
+      "score": "3-1"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Rydyell",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "Jerseyrebox",
+      "score": "3-0"
+    },
+    {
+      "winner": "Varney_93",
+      "loser": "Lobsterosity",
+      "score": "3-1"
+    },
+    {
+      "winner": "GiygasOriginalVan",
+      "loser": "Erbear_",
+      "score": "3-0"
+    },
+    {
+      "winner": "Warshoty",
+      "loser": "InvaderTimStreams",
+      "score": "3-0"
+    },
+    {
+      "winner": "nicoluwu",
+      "loser": "Cmondinger",
+      "score": "3-2"
+    },
+    {
+      "winner": "deejumbles",
+      "loser": "TheGreatZiggyny",
+      "score": "3-2"
+    },
+    {
+      "winner": "Takumashii",
+      "loser": "ThePuffinPunk",
+      "score": "3-2"
+    },
+    {
+      "winner": "tODDlife",
+      "loser": "Peppicx",
+      "score": "3-1"
+    },
+    {
+      "winner": "Augo48",
+      "loser": "Murrayg1993",
+      "score": "3-1"
+    },
+    {
+      "winner": "Myshka1",
+      "loser": "Karolmofnc",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Xelnas",
+      "score": "3-1"
+    },
+    {
+      "winner": "DKlaww",
+      "loser": "Vetrina271",
+      "score": "3-0"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "Patdog56",
+      "score": "3-2"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "sfan786",
+      "score": "3-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Oh_My_Goth_",
+      "score": "3-0"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "CaspianCrawdad",
+      "score": "3-0"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "antizoubilamaka",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "Ou_J",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "NuRelic",
+      "score": "3-0"
+    },
+    {
+      "winner": "Takumashii",
+      "loser": "Warshoty",
+      "score": "3-2"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "nicoluwu",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "GiygasOriginalVan",
+      "score": "3-0"
+    },
+    {
+      "winner": "Augo48",
+      "loser": "Scyther159",
+      "score": "3-0"
+    },
+    {
+      "winner": "Rydyell",
+      "loser": "Chronometrics",
+      "score": "3-2"
+    },
+    {
+      "winner": "deejumbles",
+      "loser": "sillypears",
+      "score": "3-2"
+    },
+    {
+      "winner": "tODDlife",
+      "loser": "dadalo1",
+      "score": "3-0"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "gSrV",
+      "score": "3-0"
+    },
+    {
+      "winner": "Staekk",
+      "loser": "FireDead659",
+      "score": "3-1"
+    },
+    {
+      "winner": "Varney_93",
+      "loser": "Erbear_",
+      "score": "3-1"
+    },
+    {
+      "winner": "Murrayg1993",
+      "loser": "ThePuffinPunk",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "TheGreatZiggyny",
+      "score": "3-0"
+    },
+    {
+      "winner": "InvaderTimStreams",
+      "loser": "Karolmofnc",
+      "score": "3-0"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "Myshka1",
+      "score": "3-2"
+    },
+    {
+      "winner": "Peppicx",
+      "loser": "Cmondinger",
+      "score": "3-0"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "Lobsterosity",
+      "score": "3-1"
+    },
+    {
+      "winner": "DKlaww",
+      "loser": "Xelnas",
+      "score": "3-2"
+    },
+    {
+      "winner": "Vetrina271",
+      "loser": "jminman",
+      "score": "3-1"
+    },
+    {
+      "winner": "Patdog56",
+      "loser": "sfan786",
+      "score": "3-1"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "s0cialphobia",
+      "score": "3-0"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "910dan",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "ShinyRiolu21",
+      "score": "3-2"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Oh_My_Goth_",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "aferalsheep",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "fug1t",
+      "loser": "Hyphen_ated",
+      "score": "3-0"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "Thalen22",
+      "score": "3-2"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "NuRelic",
+      "score": "3-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "ProblemsIRL",
+      "score": "3-2"
+    }
+  ]
+}

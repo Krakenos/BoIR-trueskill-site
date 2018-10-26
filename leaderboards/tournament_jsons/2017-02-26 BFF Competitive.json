@@ -1,0 +1,58 @@
+{
+  "name": "BFF Competitive",
+  "challonge_id": "bfftournamentcomp",
+  "challonge": "http://challonge.com/bfftournamentcomp",
+  "date": "2017-02-26",
+  "notability": "minor",
+  "organizer": ["tyrannasauruslex"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "Whole bracket",
+      "url": "https://www.twitch.tv/videos/125068697"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Cyber_1",
+      "loser": "Inschato",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "Dea1h",
+      "score": "2-1"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "antizoubilamaka",
+      "score": "2-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "imwaytopunny",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Hyphen_ated",
+      "score": "2-0"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Zamiell",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Krakenos",
+      "score": "3-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "Zamiell",
+      "score": "2-1"
+    }
+  ]
+}

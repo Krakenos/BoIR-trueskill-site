@@ -1,0 +1,88 @@
+{
+  "name": "Isaacs of the Round 3 Unseeded Finals",
+  "challonge_id": "IoTR3_unseeded_finals",
+  "challonge": "http://challonge.com/IoTR3_unseeded_finals",
+  "date": "2018-04-07",
+  "notability": "major",
+  "organizer": ["xUnhingedMoose"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Dea1h",
+      "loser": "Sakk_",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "MoucheronQuipet",
+      "score": "3-1"
+    },
+    {
+      "winner": "YuCaesar",
+      "loser": "HauntedQuest",
+      "score": "3-0"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "Cyber_1",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "YuCaesar",
+      "loser": "StoneAgeMarcus",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "YuCaesar",
+      "score": "3-1"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "Sakk_",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Cyber_1",
+      "score": "3-0"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "MoucheronQuipet",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "HauntedQuest",
+      "score": "3-1"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "YuCaesar",
+      "score": "3-2"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "Shigan_",
+      "score": "4-1"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "Shigan_",
+      "score": "4-2"
+    }
+  ]
+}

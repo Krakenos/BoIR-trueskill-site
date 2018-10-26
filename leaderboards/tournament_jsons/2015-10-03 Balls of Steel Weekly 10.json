@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly 10",
+  "challonge_id": "bosweekly10",
+  "challonge": "http://challonge.com/bosweekly10",
+  "date": "2015-10-03",
+  "notability": "minor",
+  "organizer": ["Diabetech"],
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "fug1t",
+      "loser": "Laddah",
+      "score": "2-0"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "NomsTaiters",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "FiveMoreMinutes",
+      "score": "2-0"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "Xelnas",
+      "score": "2-1"
+    },
+    {
+      "winner": "Peppicx",
+      "loser": "REXmoreOP",
+      "score": "2-1"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "Malungo9k",
+      "score": "2-0"
+    },
+    {
+      "winner": "Epicwtf",
+      "loser": "HauntedQuest",
+      "score": "2-1"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "Noowoo",
+      "score": "2-0"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "fug1t",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Jerseyrebox",
+      "score": "2-1"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "Peppicx",
+      "score": "2-0"
+    },
+    {
+      "winner": "Epicwtf",
+      "loser": "NebularView",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Scyther159",
+      "score": "3-2"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "Epicwtf",
+      "score": "3-1"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "Cyber_1",
+      "score": "3-0"
+    }
+  ]
+}

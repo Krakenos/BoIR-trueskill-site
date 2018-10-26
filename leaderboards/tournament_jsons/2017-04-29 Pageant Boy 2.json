@@ -1,0 +1,102 @@
+{
+  "name": "Pageant Boy 2",
+  "challonge_id": "PageantBoy2",
+  "challonge": "http://challonge.com/PageantBoy2",
+  "date": "2017-04-29",
+  "notability": "minor",
+  "organizer": ["StoneAgeMarcus"],
+  "ruleset": "other",
+  "description": "A weekend tournament with a twist -- builds are more important than speed",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/139496823"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/139497233"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "HauntedQuest",
+      "loser": "Jaaski99",
+      "score": "2-1"
+    },
+    {
+      "winner": "tyrannasauruslex",
+      "loser": "Krakenos",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "CrafterLynx",
+      "score": "2-1"
+    },
+    {
+      "winner": "SedNegi",
+      "loser": "Noowoo",
+      "score": "2-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "thisguyisbarry",
+      "score": "2-1"
+    },
+    {
+      "winner": "Lobsterostiy",
+      "loser": "xUnhingedMoose",
+      "score": "2-0"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Lobsterostiy",
+      "score": "draw"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "ceehe",
+      "score": "2-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Zamiell",
+      "score": "2-1"
+    },
+    {
+      "winner": "Lobsterostiy",
+      "loser": "HauntedQuest",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "SedNegi",
+      "score": "2-0"
+    },
+    {
+      "winner": "tyrannasauruslex",
+      "loser": "antizoubilamaka",
+      "score": "2-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "SlashSP",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Lobsterostiy",
+      "score": "2-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "tyrannasauruslex",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Thalen22",
+      "score": "2-1"
+    }
+  ]
+}

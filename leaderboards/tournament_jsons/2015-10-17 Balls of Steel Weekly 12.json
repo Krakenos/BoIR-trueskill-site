@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly 12",
+  "challonge_id": "bosweekly12",
+  "challonge": "http://challonge.com/bosweekly12",
+  "date": "2015-10-17",
+  "notability": "minor",
+  "organizer": ["Diabetech"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Laddah",
+      "loser": "Malungo9k",
+      "score": "2-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "FSUYevon",
+      "score": "2-0"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "Oh_My_Goth_",
+      "score": "2-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "DKlaww",
+      "score": "2-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Noowoo",
+      "score": "2-1"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "Xelnas",
+      "score": "2-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Haagiboy88",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "FiveMoreMinutes",
+      "score": "2-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Laddah",
+      "score": "2-1"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "Dea1h",
+      "score": "2-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "NebularView",
+      "score": "2-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "BrainTM",
+      "score": "2-0"
+    },
+    {
+      "winner": "REXmoreOP",
+      "loser": "Ou_J",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Thalen22",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "REXmoreOP",
+      "score": "3-1"
+    }
+  ]
+}

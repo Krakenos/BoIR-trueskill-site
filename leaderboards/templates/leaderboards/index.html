@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Tournament Leaderboards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/se/dt-1.10.18/r-2.2.2/datatables.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+<br>
+<div class="ui container">
+    <h1 class="ui header">Tournament Leaderboards</h1>
+    <div class="ui divider"></div>
+    <div class="ui segment">
+        <h4 class="ui header">General information about leaderboards</h4>
+        <ul class="ui list">
+            <li>Players ratings are based on 1v1 match up's in competitive tournaments</li>
+            <li>Algorithm used to calculate ratings is Microsoft's Trueskill</li>
+            <li>Players will show on the specific leaderboard only if they played in at least 2 tournaments that count
+                towards it
+            </li>
+        </ul>
+    </div>
+    <div class="large three ui buttons">
+        <button class="ui button" id="seeded_button">Seeded</button>
+        <button class="ui button" id="mixed_button">Mixed</button>
+        <button class="ui button" id="unseeded_button">Unseeded</button>
+    </div>
+    <div class="ui segment" id="mixed_leaderboard_details">
+        <h4 class="ui header">Mixed leaderboard details</h4>
+        <ul class="ui list">
+            <li>For this leaderboard count all the seeded, unseeded and diversity events</li>
+            <li>Seeded races are weighted 4 times more than unseeded races</li>
+            <li>Diversity races are weighted the same as unseeded races</li>
+            <li>Mixed races, where each set alternated between seeded, unseeded, and diversity ruleset (example BITE 2
+                tournament) are weighted 2 times more than unseeded
+            </li>
+            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_mixed')">following tournaments</a>
+                count towards mixed leaderboard
+            </li>
+        </ul>
+    </div>
+    <div class="ui segment" id="seeded_leaderboard_details">
+        <h4 class="ui header">Seeded leaderboard details</h4>
+        <ul class="ui list">
+            <li>For this leaderboard count only purely seeded races</li>
+            <li>All the races are weighted the same</li>
+            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_seeded')">following tournaments</a>
+                count towards seeded leaderboard
+            </li>
+        </ul>
+    </div>
+    <div class="ui segment" id="unseeded_leaderboard_details">
+        <h4 class="ui header">Unseeded leaderboard details</h4>
+        <ul class="ui list">
+            <li>For this leaderboard count unseeded, diversity, and mixed events</li>
+            <li>All the races are weighted the same, no matter the ruleset</li>
+            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_unseeded')">following tournaments</a>
+                count towards unseeded leaderboard
+            </li>
+        </ul>
+    </div>
+    <div class="ui basic mini modal" id="modal_mixed">
+        <div class="header">List of mixed tournaments</div>
+        <div class="content">
+            {% for tournament in mixed_events %}
+                <p>{{ tournament }}</p>
+            {% endfor %}
+
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Got it!
+            </div>
+        </div>
+    </div>
+    <div class="ui basic mini modal" id="modal_seeded">
+        <div class="header">List of seeded tournaments</div>
+        <div class="content">
+            {% for tournament in seeded_events %}
+                <p>{{ tournament }}</p>
+            {% endfor %}
+
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Got it!
+            </div>
+        </div>
+    </div>
+    <div class="ui basic mini modal" id="modal_unseeded">
+        <div class="header">List of unseeded tournaments</div>
+        <div class="content">
+            {% for tournament in unseeded_events %}
+                <p>{{ tournament }}</p>
+            {% endfor %}
+
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Got it!
+            </div>
+        </div>
+    </div>
+    <table id="leaderboard" class="ui responsive no-wrap unstackable celled table">
+        <thead>
+        <tr>
+            <th>Place</th>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Tournaments Played</th>
+            <th>Matches Played</th>
+        </tr>
+        </thead>
+
+    </table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/se/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+<script>
+    function GetLeaderboard(type) {
+        $(document).ready(function () {
+            table = $('#leaderboard').DataTable({
+                ajax: "ajax/leaderboards/" + type,
+                columns: [
+                    {"data": "placement"},
+                    {"data": "player__name"},
+                    {"data": "exposure"},
+                    {"data": "tournaments_played"},
+                    {"data": "matches_played"}
+                ],
+                columnDefs: [
+                    {
+                        render: function (data) {
+                            return data.toFixed(2);
+                        },
+                        targets: [2]
+                    }
+                ],
+                "lengthMenu": [[25, 50, 75, 100, -1], [25, 50, 75, 100, "All"]],
+                "pageLength": 25
+            });
+        });
+    }
+
+    function ShowModal(anymodal) {
+        $(anymodal).modal('show');
+    }
+
+    $('#seeded_leaderboard_details').transition('hide');
+    $('#unseeded_leaderboard_details').transition('hide');
+    GetLeaderboard('mixed');
+    $('#mixed_button').addClass('active');
+    $('#mixed_button').on('click', function () {
+        if ($(this).hasClass('active') === false) {
+            $(this).addClass('active');
+            if ($('#seeded_button').hasClass('active') === true) {
+                $('#seeded_button').removeClass('active');
+                $('#seeded_leaderboard_details').transition('slide down', function () {
+                    $('#mixed_leaderboard_details').transition('slide down');
+                });
+            }
+            else if ($('#unseeded_button').hasClass('active') === true) {
+                $('#unseeded_button').removeClass('active');
+                $('#unseeded_leaderboard_details').transition('slide down', function () {
+                    $('#mixed_leaderboard_details').transition('slide down');
+                });
+            }
+
+            table.ajax.url('ajax/leaderboards/mixed').load();
+        }
+    });
+    $('#seeded_button').on('click', function () {
+        if ($(this).hasClass('active') === false) {
+            $(this).addClass('active');
+            if ($('#mixed_button').hasClass('active') === true) {
+                $('#mixed_button').removeClass('active');
+                $('#mixed_leaderboard_details').transition('slide down', function () {
+                    $('#seeded_leaderboard_details').transition('slide down');
+                });
+            }
+            else if ($('#unseeded_button').hasClass('active') === true) {
+                $('#unseeded_button').removeClass('active');
+                $('#unseeded_leaderboard_details').transition('slide down', function () {
+                    $('#seeded_leaderboard_details').transition('slide down');
+                });
+            }
+            table.ajax.url('ajax/leaderboards/seeded').load();
+        }
+    });
+    $('#unseeded_button').on('click', function () {
+        if ($(this).hasClass('active') === false) {
+            $(this).addClass('active');
+            if ($('#mixed_button').hasClass('active') === true) {
+                $('#mixed_button').removeClass('active');
+                $('#mixed_leaderboard_details').transition('slide down', function () {
+                    $('#unseeded_leaderboard_details').transition('slide down');
+                });
+            }
+            else if ($('#seeded_button').hasClass('active') === true) {
+                $('#seeded_button').removeClass('active');
+                $('#seeded_leaderboard_details').transition('slide down', function () {
+                    $('#unseeded_leaderboard_details').transition('slide down');
+                });
+            }
+            table.ajax.url('ajax/leaderboards/unseeded').load();
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+{
+  "name": "Isaacs of the Round 2 Seeded",
+  "challonge_id": "IoTR2s",
+  "challonge": "http://challonge.com/IoTR2s",
+  "date": "2017-08-14",
+  "notability": "major",
+  "organizer": ["xUnhingedMoose"],
+  "ruleset": "seeded",
+  "description": "https://docs.google.com/spreadsheets/d/1qU1MuEdOn3veXH58H7q8Yv1vmIpGgWiwsqD7_Xc-pB8/edit#gid=65786501",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Zamiell",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "bvc666",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "A Discount",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "PassionDrama",
+      "score": "3-1"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "Sp1kess",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "Brother Chen",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "Anuvys",
+      "score": "3-0"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "Zazima",
+      "score": "3-0"
+    },
+    {
+      "winner": "Jesuitical",
+      "loser": "RedstoneMenace",
+      "score": "3-0"
+    },
+    {
+      "winner": "Smoomy",
+      "loser": "flaw456",
+      "score": "3-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "Smoomy",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "Sp1kess",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Brother Chen",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "thereisnofuture",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "910dan",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Dea1h",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Jesuitical",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "A Discount",
+      "score": "3-2"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "Anuvys",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zazima",
+      "loser": "bvc666",
+      "score": "3-0"
+    },
+    {
+      "winner": "Smoomy",
+      "loser": "birdie0",
+      "score": "3-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Zazima",
+      "score": "3-0"
+    },
+    {
+      "winner": "Brother Chen",
+      "loser": "Sp1kess",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "PassionDrama",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "Jesuitical",
+      "score": "3-0"
+    },
+    {
+      "winner": "A Discount",
+      "loser": "Hikarichan73",
+      "score": "3-0"
+    },
+    {
+      "winner": "bvc666",
+      "loser": "flaw456",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "Nariom",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Shigan_",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "910dan",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Brother Chen",
+      "score": "3-2"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Nariom",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Smoomy",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-1"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "A Discount",
+      "loser": "Zazima",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "Jesuitical",
+      "score": "3-0"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "xUnhingedMoose",
+      "score": "3-0"
+    },
+    {
+      "winner": "Hikarichan73",
+      "loser": "flaw456",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "HauntedQuest",
+      "score": "3-0"
+    },
+    {
+      "winner": "Brother Chen",
+      "loser": "Smoomy",
+      "score": "3-0"
+    },
+    {
+      "winner": "Ou_J",
+      "loser": "A Discount",
+      "score": "3-0"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "Nariom",
+      "score": "3-2"
+    },
+    {
+      "winner": "910dan",
+      "loser": "ceehe",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zazima",
+      "loser": "Hikarichan73",
+      "score": "3-1"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "flaw456",
+      "score": "3-0"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "bvc666",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "thereisnofuture",
+      "score": "3-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "SlashSP",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-1"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "Ou_J",
+      "score": "3-0"
+    },
+    {
+      "winner": "Brother Chen",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "910dan",
+      "score": "3-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "A Discount",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zazima",
+      "loser": "ceehe",
+      "score": "3-0"
+    },
+    {
+      "winner": "xUnhingedMoose",
+      "loser": "Smoomy",
+      "score": "3-0"
+    },
+    {
+      "winner": "birdie0",
+      "loser": "bvc666",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "HauntedQuest",
+      "score": "3-1"
+    }
+  ]
+}

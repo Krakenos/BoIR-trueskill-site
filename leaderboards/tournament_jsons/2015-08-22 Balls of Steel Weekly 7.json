@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly 7",
+  "challonge_id": "bosweekly7",
+  "challonge": "http://challonge.com/bosweekly7",
+  "date": "2015-08-22",
+  "notability": "minor",
+  "organizer": ["Diabetech"],
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Minimelt35",
+      "score": "2-0"
+    },
+    {
+      "winner": "Jerseyrebox",
+      "loser": "Something915",
+      "score": "2-1"
+    },
+    {
+      "winner": "Malungo9k",
+      "loser": "TheSilentSnake",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "InvaderTimStreams",
+      "score": "2-0"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "BrainTM",
+      "score": "2-0"
+    },
+    {
+      "winner": "ConnorB_",
+      "loser": "GastonDupris",
+      "score": "2-0"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "Proxymate",
+      "score": "2-1"
+    },
+    {
+      "winner": "sillypears",
+      "loser": "Ou_J",
+      "score": "2-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Jerseyrebox",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Malungo9k",
+      "score": "2-1"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "ConnorB_",
+      "score": "2-1"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "sillypears",
+      "score": "2-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Cyber_1",
+      "score": "3-1"
+    },
+    {
+      "winner": "YamaYamaDingDong",
+      "loser": "Fisshy_",
+      "score": "3-1"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "YamaYamaDingDong",
+      "score": "3-0"
+    }
+  ]
+}

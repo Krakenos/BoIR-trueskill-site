@@ -1,0 +1,89 @@
+{
+  "name": "Pandora's Box",
+  "challonge_id": "tournoipandorasbox",
+  "challonge": "http://challonge.com/tournoipandorasbox",
+  "date": "2016-10-15",
+  "notability": "minor",
+  "organizer": ["LaTaupeFR"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "La_Liburne_Automatique",
+      "loser": "grossebrebi",
+      "score": "2-0"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "personne",
+      "score": "2-0",
+      "description": "Score Unknown/Forfeit"
+    },
+    {
+      "winner": "Calimero38750",
+      "loser": "Ilianasable",
+      "score": "2-0"
+    },
+    {
+      "winner": "zefynra",
+      "loser": "Tifaerith",
+      "score": "2-0"
+    },
+    {
+      "winner": "Chfou",
+      "loser": "Hikarichan73",
+      "score": "2-0"
+    },
+    {
+      "winner": "Curedents",
+      "loser": "Sakk_",
+      "score": "2-0"
+    },
+    {
+      "winner": "Diabalzane",
+      "loser": "EnorielLelfe",
+      "score": "2-0"
+    },
+    {
+      "winner": "SpiritOwners",
+      "loser": "MrPopoche",
+      "score": "2-1"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "La_Liburne_Automatique",
+      "score": "2-0"
+    },
+    {
+      "winner": "Calimero38750",
+      "loser": "zefynra",
+      "score": "2-0"
+    },
+    {
+      "winner": "Chfou",
+      "loser": "Curedents",
+      "score": "2-1"
+    },
+    {
+      "winner": "Diabalzane",
+      "loser": "SpiritOwners",
+      "score": "2-1"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "Calimero38750",
+      "score": "2-1"
+    },
+    {
+      "winner": "Chfou",
+      "loser": "Diabalzane",
+      "score": "2-1"
+    },
+    {
+      "winner": "MrPopoche",
+      "loser": "Chfou",
+      "score": "3-0"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Battle of Kings 2",
+  "challonge_id": "BattleOfkings_2",
+  "challonge": "http://challonge.com/BattleOfkings_2",
+  "date": "2017-04-08",
+  "notability": "major",
+  "organizer": ["Dea1h"],
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/134356457"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/134658191"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "antizoubilamaka",
+      "loser": "thereisnofuture",
+      "score": "3-1"
+    },
+    {
+      "winner": "thisguyisbarry",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "SlashSP",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "thisguyisbarry",
+      "score": "4-0"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "PassionDrama",
+      "score": "4-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "ReidMercury__",
+      "score": "5-3"
+    }
+  ]
+}

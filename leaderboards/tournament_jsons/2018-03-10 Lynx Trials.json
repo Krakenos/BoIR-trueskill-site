@@ -1,0 +1,169 @@
+{
+  "name": "Lynx Trials",
+  "challonge_id": "FakeTrials",
+  "challonge": "https://challonge.com/FakeTrials",
+  "date": "2018-03-10",
+  "notability": "major",
+  "organizer": ["CrafterLynx", "ProIberGaming"],
+  "ruleset": "seeded",
+  "description": "Seeded tournament with set starts and goals per round, postponed indefinitely due to organisation on ProIberGaming's side",
+  "videos": [
+    {
+      "description": "Round 3 Day 1",
+      "url": "https://www.twitch.tv/videos/237942513"
+    },
+    {
+      "description": "Round 3 Day 2",
+      "url": "https://www.twitch.tv/videos/237942613"
+    },
+    {
+      "description": "Upper Round 4 Day 1",
+      "url": "https://www.twitch.tv/videos/239996113"
+    },
+    {
+      "description": "Lower Round 4 Day 2",
+      "url": "https://www.twitch.tv/videos/240485659"
+    },
+    {
+      "description": "Lower Bracket Finals",
+      "url": "https://www.twitch.tv/videos/248644126"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Dea1h",
+      "loser": "Beld_X",
+      "score": "2-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "adryndn",
+      "score": "2-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "ElysianDevil",
+      "score": "2-0"
+    },
+    {
+      "winner": "MoucheronQuipet",
+      "loser": "Nariom",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Zamiell",
+      "score": "2-1"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "ceehe",
+      "score": "2-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "GamonymousRC",
+      "score": "2-0"
+    },
+    {
+      "winner": "Benkize",
+      "loser": "Hispa",
+      "score": "2-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "antizoubilamaka",
+      "score": "2-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "MoucheronQuipet",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "thereisnofuture",
+      "score": "2-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Benkize",
+      "score": "2-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "SlashSP",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "adryndn",
+      "loser": "Beld_X",
+      "score": "2-0"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "ElysianDevil",
+      "score": "2-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "ceehe",
+      "score": "2-1"
+    },
+    {
+      "winner": "GamonymousRC",
+      "loser": "Hispa",
+      "score": "2-0"
+    },
+    {
+      "winner": "adryndn",
+      "loser": "Benkize",
+      "score": "2-1"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Nariom",
+      "score": "2-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "MoucheronQuipet",
+      "score": "2-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "GamonymousRC",
+      "score": "2-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "antizoubilamaka",
+      "score": "2-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "adryndn",
+      "score": "2-1"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Zamiell",
+      "score": "3-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Shigan_",
+      "score": "3-2"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "SlashSP",
+      "score": "3-1"
+    }
+  ]
+}

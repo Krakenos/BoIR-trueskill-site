@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly 5",
+  "challonge_id": "bosweekly5",
+  "challonge": "http://challonge.com/bosweekly5",
+  "date": "2015-08-08",
+  "notability": "minor",
+  "organizer": ["Diabetech"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "BrainTM",
+      "loser": "Houson",
+      "score": "2-0"
+    },
+    {
+      "winner": "Scyther159",
+      "loser": "CaspianCrawdad",
+      "score": "2-1"
+    },
+    {
+      "winner": "NomsTaiters",
+      "loser": "sillypears",
+      "score": "2-0"
+    },
+    {
+      "winner": "Xelnas",
+      "loser": "tyrannasauruslex",
+      "score": "2-1"
+    },
+    {
+      "winner": "Oh_My_Goth_",
+      "loser": "SageV3",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "TheFatWizard",
+      "score": "2-0"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "Spidahmahn",
+      "score": "2-1"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Something915",
+      "score": "2-1"
+    },
+    {
+      "winner": "BrainTM",
+      "loser": "Scyther159",
+      "score": "2-0"
+    },
+    {
+      "winner": "NomsTaiters",
+      "loser": "Xelnas",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "Oh_My_Goth_",
+      "score": "2-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Fisshy_",
+      "score": "2-1"
+    },
+    {
+      "winner": "NomsTaiters",
+      "loser": "BrainTM",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "HauntedQuest",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hyphen_ated",
+      "loser": "NomsTaiters",
+      "score": "3-0"
+    }
+  ]
+}

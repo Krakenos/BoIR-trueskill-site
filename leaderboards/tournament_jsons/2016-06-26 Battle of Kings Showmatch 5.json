@@ -1,0 +1,23 @@
+{
+  "name": "Battle of Kings Showmatch 5",
+  "challonge_id": "",
+  "challonge": "",
+  "date": "2016-06-26",
+  "notability": "minor",
+  "organizer": ["Dea1h"],
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "antizoubilamaka vs Cyber_1",
+      "url": "https://www.twitch.tv/videos/74857863"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Cyber_1",
+      "loser": "antizoubilamaka",
+      "score": "5-2"
+    }
+  ]
+}

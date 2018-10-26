@@ -1,0 +1,88 @@
+{
+  "name": "Basement 2",
+  "challonge_id": "basement_2",
+  "challonge": "http://challonge.com/basement_2",
+  "date": "2016-01-23",
+  "notability": "minor",
+  "organizer": ["Haagiboy88"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "PK_Antifreeze",
+      "loser": "deejumbles",
+      "score": "2-0"
+    },
+    {
+      "winner": "Cmondinger",
+      "loser": "tODDlife",
+      "score": "2-0"
+    },
+    {
+      "winner": "Calsans",
+      "loser": "KitsuneWynterGames",
+      "score": "2-0"
+    },
+    {
+      "winner": "ambidex999",
+      "loser": "ThePuffinPunk",
+      "score": "2-0"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "sfan786",
+      "score": "2-0"
+    },
+    {
+      "winner": "ShinNessTen",
+      "loser": "s0cialphobia",
+      "score": "2-1"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "Chronometrics",
+      "score": "2-1"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "ParadoxQuine",
+      "score": "2-0"
+    },
+    {
+      "winner": "PK_Antifreeze",
+      "loser": "Cmondinger",
+      "score": "2-1"
+    },
+    {
+      "winner": "ambidex999",
+      "loser": "Calsans",
+      "score": "2-1"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "ShinNessTen",
+      "score": "2-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "TheMoonSage",
+      "score": "2-0"
+    },
+    {
+      "winner": "ambidex999",
+      "loser": "PK_Antifreeze",
+      "score": "2-0"
+    },
+    {
+      "winner": "NeNeSSquick",
+      "loser": "CrafterLynx",
+      "score": "2-1"
+    },
+    {
+      "winner": "ambidex999",
+      "loser": "NeNeSSquick",
+      "score": "3-2"
+    }
+  ]
+}

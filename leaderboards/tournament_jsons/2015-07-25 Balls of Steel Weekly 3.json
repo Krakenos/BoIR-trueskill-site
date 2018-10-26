@@ -1,0 +1,88 @@
+{
+  "name": "Balls of Steel Weekly 3",
+  "challonge_id": "bosweekly3",
+  "challonge": "http://challonge.com/bosweekly3",
+  "date": "2015-07-25",
+  "notability": "minor",
+  "organizer": ["Diabetech"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "antizoubilamaka",
+      "loser": "DKlaww",
+      "score": "2-0"
+    },
+    {
+      "winner": "QuestionablePlays",
+      "loser": "Jerseyrebox",
+      "score": "2-1"
+    },
+    {
+      "winner": "ItsNullifier",
+      "loser": "Spidahmahn",
+      "score": "2-0"
+    },
+    {
+      "winner": "TehCrazyDuck",
+      "loser": "sillypears",
+      "score": "2-1"
+    },
+    {
+      "winner": "Epicwtf",
+      "loser": "fug1t",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hazard900",
+      "loser": "Xelnas",
+      "score": "2-0"
+    },
+    {
+      "winner": "Black_yuu",
+      "loser": "Hyphen_ated",
+      "score": "2-0"
+    },
+    {
+      "winner": "CaspianCrawdad",
+      "loser": "Slapkey",
+      "score": "2-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "QuestionablePlays",
+      "score": "2-0"
+    },
+    {
+      "winner": "ItsNullifier",
+      "loser": "TehCrazyDuck",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hazard900",
+      "loser": "Epicwtf",
+      "score": "2-1"
+    },
+    {
+      "winner": "Black_yuu",
+      "loser": "CaspianCrawdad",
+      "score": "2-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "ItsNullifier",
+      "score": "2-1"
+    },
+    {
+      "winner": "Hazard900",
+      "loser": "Black_yuu",
+      "score": "2-0"
+    },
+    {
+      "winner": "Hazard900",
+      "loser": "antizoubilamaka",
+      "score": "3-1"
+    }
+  ]
+}

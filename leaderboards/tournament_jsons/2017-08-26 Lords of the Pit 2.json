@@ -1,0 +1,97 @@
+{
+  "name": "Lords of the Pit 2",
+  "challonge_id": "Lordsofthepit2",
+  "challonge": "http://challonge.com/Lordsofthepit2",
+  "date": "2017-08-26",
+  "notability": "minor",
+  "organizer": ["SlashSP"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 1",
+      "url": "https://www.twitch.tv/videos/170464565"
+    },
+    {
+      "description": "day 2",
+      "url": "https://www.twitch.tv/videos/170464848"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Sakk_",
+      "loser": "CrafterLynx",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "thereisnofuture",
+      "score": "3-0"
+    },
+    {
+      "winner": "flaw456",
+      "loser": "Karolmofnc",
+      "score": "3-1"
+    },
+    {
+      "winner": "Nariom",
+      "loser": "leo_ze_tron",
+      "score": "3-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Anuvys",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Blumpkin_Idaho",
+      "score": "3-1"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Jesuitical",
+      "score": "3-0"
+    },
+    {
+      "winner": "TheMoonSage",
+      "loser": "SedNegi",
+      "score": "3-1"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Sakk_",
+      "score": "3-0"
+    },
+    {
+      "winner": "flaw456",
+      "loser": "Nariom",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "antizoubilamaka",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "TheMoonSage",
+      "score": "3-2"
+    },
+    {
+      "winner": "flaw456",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Zamiell",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "flaw456",
+      "score": "4-0"
+    }
+  ]
+}

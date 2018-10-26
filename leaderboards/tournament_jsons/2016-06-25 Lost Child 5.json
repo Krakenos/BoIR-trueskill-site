@@ -1,0 +1,89 @@
+{
+  "name": "Lost Child 5",
+  "challonge_id": "LostChild5",
+  "challonge": "http://challonge.com/LostChild5",
+  "date": "2016-06-25",
+  "notability": "minor",
+  "organizer": ["Xelnas"],
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Cyber_1",
+      "loser": "Waltimate",
+      "score": "3-0"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "drathianGull",
+      "score": "3-0"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "Takumashii",
+      "score": "3-1"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "Thalen22",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Warshoty",
+      "score": "3-2"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "SlashSP",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "deejumbles",
+      "score": "3-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Tanook_Leduc",
+      "score": "3-0"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "CrafterLynx",
+      "score": "3-0"
+    },
+    {
+      "winner": "Krakenos",
+      "loser": "ItsScion",
+      "score": "3-2"
+    },
+    {
+      "winner": "bmz_loop",
+      "loser": "HauntedQuest",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "ceehe",
+      "score": "3-2"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Krakenos",
+      "score": "3-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "bmz_loop",
+      "score": "3-1"
+    },
+    {
+      "winner": "Cyber_1",
+      "loser": "Zamiell",
+      "score": "3-0",
+      "description": "exact score unknown, match not recorded"
+    }
+  ]
+}

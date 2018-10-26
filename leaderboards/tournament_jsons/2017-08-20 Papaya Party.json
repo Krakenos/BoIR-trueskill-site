@@ -1,0 +1,96 @@
+{
+  "name": "Papaya Party",
+  "challonge_id": "Papaya_P",
+  "challonge": "http://challonge.com/Papaya_P",
+  "date": "2017-08-20",
+  "notability": "minor",
+  "organizer": ["antizoubilamaka"],
+  "ruleset": "seeded",
+  "description": "",
+  "videos": [
+    {
+      "description": "day 2 part 1",
+      "url": "https://www.twitch.tv/videos/168585057"
+    },
+    {
+      "description": "day 2 part 1",
+      "url": "https://www.twitch.tv/videos/168585188"
+    },
+    {
+      "description": "day 3",
+      "url": "https://www.twitch.tv/videos/168585357"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "ReidMercury__",
+      "loser": "PassionDrama",
+      "score": "4-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Zamiell",
+      "score": "4-2"
+    },
+    {
+      "winner": "Brother Chen",
+      "loser": "TheMoonSage",
+      "score": "4-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "thereisnofuture",
+      "score": "4-3"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "ReidMercury__",
+      "score": "4-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Brother Chen",
+      "score": "4-1"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Shigan_",
+      "score": "4-2"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "PassionDrama",
+      "score": "4-1"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "TheMoonSage",
+      "score": "4-1"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Brother Chen",
+      "score": "4-1"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "ReidMercury__",
+      "score": "4-0"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "Zamiell",
+      "score": "4-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "thereisnofuture",
+      "score": "4-2"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Shigan_",
+      "score": "4-1"
+    }
+  ]
+}

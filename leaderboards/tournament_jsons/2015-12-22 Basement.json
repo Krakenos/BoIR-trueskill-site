@@ -1,0 +1,88 @@
+{
+  "name": "Basement",
+  "challonge_id": "basement_1",
+  "challonge": "http://challonge.com/basement_1",
+  "date": "2015-12-22",
+  "notability": "minor",
+  "organizer": ["Haagiboy88"],
+  "ruleset": "unseeded",
+  "description": "",
+  "videos": [],
+  "matchups": [
+    {
+      "winner": "Partofthecreed",
+      "loser": "Th3Warrior_Gaming",
+      "score": "1-0"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "ThornlessGnu",
+      "score": "1-0"
+    },
+    {
+      "winner": "cranderveldt",
+      "loser": "Atradii22",
+      "score": "1-0"
+    },
+    {
+      "winner": "deejumbles",
+      "loser": "Chronometrics",
+      "score": "1-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Shroud3d",
+      "score": "1-0"
+    },
+    {
+      "winner": "ThePuffinPunk",
+      "loser": "thisguyisbarry",
+      "score": "1-0"
+    },
+    {
+      "winner": "Schmidtfer",
+      "loser": "Shatterglasslol",
+      "score": "1-0"
+    },
+    {
+      "winner": "tODDlife",
+      "loser": "nicoluwu",
+      "score": "1-0"
+    },
+    {
+      "winner": "ItsScion",
+      "loser": "Partofthecreed",
+      "score": "2-1"
+    },
+    {
+      "winner": "cranderveldt",
+      "loser": "deejumbles",
+      "score": "2-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "ThePuffinPunk",
+      "score": "2-1"
+    },
+    {
+      "winner": "Schmidtfer",
+      "loser": "tODDlife",
+      "score": "2-0"
+    },
+    {
+      "winner": "cranderveldt",
+      "loser": "ItsScion",
+      "score": "2-1"
+    },
+    {
+      "winner": "Schmidtfer",
+      "loser": "SlashSP",
+      "score": "2-0"
+    },
+    {
+      "winner": "cranderveldt",
+      "loser": "Schmidtfer",
+      "score": "2-0"
+    }
+  ]
+}

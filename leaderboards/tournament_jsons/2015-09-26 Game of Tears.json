@@ -1,0 +1,165 @@
+{
+  "name": "Game of Tears",
+  "challonge_id": "GameOfTears",
+  "challonge": "http://challonge.com/GameOfTears",
+  "date": "2015-09-26",
+  "notability": "minor",
+  "organizer": ["NuRelic", "Oh_My_Goth_", "ErBear_"],
+  "ruleset": "diversity",
+  "description": "",
+  "videos": [
+    {
+      "description": "Game of Tears Play-in #1 (Sillypears vs Scyther159)",
+      "url": "https://www.twitch.tv/videos/17784325"
+    },
+    {
+      "description": "Game of Tears! Round 1 (Part 1)",
+      "url": "https://www.twitch.tv/videos/17954471"
+    },
+    {
+      "description": "Game of Tears! Round 1 (Part 2)",
+      "url": "https://www.twitch.tv/videos/17954632"
+    },
+    {
+      "description": "antizoubilamaka vs. TheGreatZiggyny",
+      "url": "https://www.twitch.tv/videos/19533087"
+    },
+    {
+      "description": "ProblemsIRL vs. Fisshy_",
+      "url": "https://www.twitch.tv/videos/19533604"
+    },
+    {
+      "description": "Zamiell vs. HauntedQuest",
+      "url": "https://www.twitch.tv/videos/19533944"
+    },
+    {
+      "description": "NebularView vs. Varney_93",
+      "url": "https://www.twitch.tv/videos/19534140"
+    },
+    {
+      "description": "antizoubilamaka vs. HauntedQuest",
+      "url": "https://www.twitch.tv/videos/19534414"
+    },
+    {
+      "description": "Fisshy_ vs. NebularView",
+      "url": "https://www.twitch.tv/videos/19534639"
+    },
+    {
+      "description": "HauntedQuest vs. NebularView",
+      "url": "https://www.twitch.tv/videos/19534843"
+    },
+    {
+      "description": "antizoubilamaka vs. Fisshy_",
+      "url": "https://www.twitch.tv/videos/19535004"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Scyther159",
+      "loser": "sillypears",
+      "score": "2-1"
+    },
+    {
+      "winner": "Augo48",
+      "loser": "InvaderTimStreams",
+      "score": "2-0",
+      "description": "match not recorded, exact score unknown"
+    },
+    {
+      "winner": "Xelnas",
+      "loser": "TwentySeven72",
+      "score": "2-1"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "NeNeSSquick",
+      "score": "2-0"
+    },
+    {
+      "winner": "Geneiijin",
+      "loser": "nicoluwu",
+      "score": "2-0",
+      "description": "match not recorded, exact score unknown"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "Scyther159",
+      "score": "2-1"
+    },
+    {
+      "winner": "TheGreatZiggyny",
+      "loser": "Thalen22",
+      "score": "2-1"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Augo48",
+      "score": "2-0"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "Xelnas",
+      "score": "2-1"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "YamaYamaDingDong",
+      "score": "2-1"
+    },
+    {
+      "winner": "Varney_93",
+      "loser": "Peppicx",
+      "score": "2-0"
+    },
+    {
+      "winner": "ProblemsIRL",
+      "loser": "Geneiijin",
+      "score": "2-0"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "DKlaww",
+      "score": "2-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "TheGreatZiggyny",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Zamiell",
+      "score": "3-0"
+    },
+    {
+      "winner": "NebularView",
+      "loser": "Varney_93",
+      "score": "3-2"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "ProblemsIRL",
+      "score": "3-2"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "HauntedQuest",
+      "score": "3-1"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "NebularView",
+      "score": "3-0"
+    },
+    {
+      "winner": "Fisshy_",
+      "loser": "antizoubilamaka",
+      "score": "3-0"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "NebularView",
+      "score": "3-0"
+    }
+  ]
+}

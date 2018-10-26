@@ -1,0 +1,223 @@
+{
+  "name": "Isaac World Cup",
+  "challonge_id": "",
+  "challonge": "",
+  "date": "2017-07-03",
+  "notability": "minor",
+  "organizer": ["bmz_loop"],
+  "ruleset": "unseeded",
+  "description": "https://docs.google.com/spreadsheets/d/1SJ9u-sYls4n2QZT74SuKiUXy-YYecajibSRWotDetMY/edit?usp=sharing",
+  "videos": [
+    {
+      "description": "Zamiell vs 910dan",
+      "url": "https://www.twitch.tv/videos/156589253"
+    },
+    {
+      "description": "CrafterLynx vs Shigan_",
+      "url": "https://www.twitch.tv/videos/157378942"
+    },
+    {
+      "description": "poopyperson88888888 vs 910dan",
+      "url": "https://www.twitch.tv/videos/157379195"
+    },
+    {
+      "description": "CrafterLynx vs stoogebag",
+      "url": "https://www.twitch.tv/videos/157524101"
+    },
+    {
+      "description": "ceehe vs stoogebag",
+      "url": "https://www.twitch.tv/videos/157535525"
+    },
+    {
+      "description": "910dan vs Noowoo",
+      "url": "https://www.twitch.tv/videos/157576062"
+    },
+    {
+      "description": "Thalen22 vs Blumpkin_Idaho",
+      "url": "https://www.twitch.tv/videos/158074243"
+    }
+  ],
+  "matchups": [
+    {
+      "winner": "Zamiell",
+      "loser": "Demolitionzz62",
+      "score": "3-0"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "910dan",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Sp1kess",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "TheMoonSage",
+      "score": "3-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "Noowoo",
+      "score": "3-0"
+    },
+    {
+      "winner": "thundo22",
+      "loser": "StoneAgeMarcus",
+      "score": "3-2"
+    },
+    {
+      "winner": "910dan",
+      "loser": "Zamiell",
+      "score": "3-1"
+    },
+    {
+      "winner": "antizoubilamaka",
+      "loser": "StoneAgeMarcus",
+      "score": "3-0"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "Demolitionzz62",
+      "score": "3-1"
+    },
+    {
+      "winner": "Thalen22",
+      "loser": "TheMoonSage",
+      "score": "3-1"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "Noowoo",
+      "score": "3-1"
+    },
+    {
+      "winner": "thundo22",
+      "loser": "Sp1kess",
+      "score": "3-0",
+      "description": "Forfeit"
+    },
+    {
+      "winner": "Zamiell",
+      "loser": "antizoubilamaka",
+      "score": "3-2"
+    },
+    {
+      "winner": "SlashSP",
+      "loser": "thundo22",
+      "score": "3-0"
+    },
+    {
+      "winner": "Sp1kess",
+      "loser": "Demolitionzz62",
+      "score": "3-1"
+    },
+    {
+      "winner": "StoneAgeMarcus",
+      "loser": "TheMoonSage",
+      "score": "3-0"
+    },
+    {
+      "winner": "Blumpkin_Idaho",
+      "loser": "Thalen22",
+      "score": "3-0"
+    },
+    {
+      "winner": "910dan",
+      "loser": "Noowoo",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "thereisnofuture",
+      "score": "3-2"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "Sakk_",
+      "score": "3-1"
+    },
+    {
+      "winner": "flaw456",
+      "loser": "CrafterLynx",
+      "score": "3-1"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "stoogebag",
+      "score": "3-0"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "Dea1h",
+      "score": "3-1"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "birdie0",
+      "score": "3-1"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "Dea1h",
+      "score": "3-2"
+    },
+    {
+      "winner": "HauntedQuest",
+      "loser": "Sakk_",
+      "score": "3-1"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "stoogebag",
+      "score": "3-0"
+    },
+    {
+      "winner": "Shigan_",
+      "loser": "flaw456",
+      "score": "3-1"
+    },
+    {
+      "winner": "PassionDrama",
+      "loser": "thereisnofuture",
+      "score": "3-2"
+    },
+    {
+      "winner": "thereisnofuture",
+      "loser": "birdie0",
+      "score": "3-0"
+    },
+    {
+      "winner": "ceehe",
+      "loser": "stoogebag",
+      "score": "3-0"
+    },
+    {
+      "winner": "Dea1h",
+      "loser": "Sakk_",
+      "score": "3-1"
+    },
+    {
+      "winner": "CrafterLynx",
+      "loser": "Shigan_",
+      "score": "3-0"
+    },
+    {
+      "winner": "flaw456",
+      "loser": "HauntedQuest",
+      "score": "3-2"
+    },
+    {
+      "winner": "ReidMercury__",
+      "loser": "PassionDrama",
+      "score": "3-1"
+    }
+  ]
+}
