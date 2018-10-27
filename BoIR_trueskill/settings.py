@@ -6,7 +6,9 @@ env = environ.Env(
     ALLOWED_HOSTS=(list, []),
     SECURE_SSL_REDIRECT=(bool, True),
     SESSION_COOKIE_SECURE=(bool, True),
-    CSRF_COOKIE_SECURE=(bool, True)
+    CSRF_COOKIE_SECURE=(bool, True),
+    STATIC_URL=(str, '/static/'),
+    STATIC_ROOT=(str, '')
 )
 BASE_DIR = environ.Path(__file__) - 2
 
@@ -112,6 +114,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+# https://docs.djangoproject.com/en/2.1/howto/static-files
 
-STATIC_URL = '/static/'
+STATIC_ROOT = env('STATIC_ROOT')
+STATIC_URL = env('STATIC_URL')
