@@ -30,7 +30,7 @@ class TrueskillCalculations:
             players_in_tourney = []
             players_in_seeded_tourney = []
             players_in_unseeded_tourney = []
-            for match in tournament.match_set.all():
+            for match in tournament.match_set.all().order_by('id'):
                 ruleset = tournament.ruleset.ruleset
                 if ruleset == 'other':
                     continue
