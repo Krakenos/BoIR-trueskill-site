@@ -1,0 +1,3 @@
+[submodule "leaderboards/tournament_jsons"]
+	path = leaderboards/tournament_jsons
+	url = https://github.com/Krakenos/BoIR-tournament-history
