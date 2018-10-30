@@ -58,7 +58,7 @@ class Command(BaseCommand):
             self.stdout.write(f'{player.pk}. {player.name}')
         self.stdout.write(f'Couldn\'t find player {player_name} in the database. Do you want to add an alias to '
                           'existing player? If no new player is going to be added into database')
-        user_input = 'n'
+        user_input = 'x'
         while user_input not in 'yYnN':
             user_input = input('(y/n):')
         if user_input in 'nN':
