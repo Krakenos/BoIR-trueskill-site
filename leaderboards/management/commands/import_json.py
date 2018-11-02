@@ -76,6 +76,8 @@ class Command(BaseCommand):
             if 'ruleset' in match:
                 db_match.ruleset = Ruleset.objects.get_or_create(
                     ruleset=match['ruleset'])[0]
+            else:
+                db_match.ruleset = new_tournament.ruleset
             db_match.save()
         if 'winner' in tournament_data:
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
