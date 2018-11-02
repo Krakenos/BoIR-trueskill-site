@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-import leaderboards.models
+from leaderboards.models import *
 import json
 from django.conf import settings
 import os
@@ -48,18 +48,18 @@ class Command(BaseCommand):
                     continue
                 self.add_tournament(tournament_data, options)
         self.stdout.write('Calculating trueskill...')
-        TrueskillCalculations(tournament_model=leaderboards.models.Tournament,
-                              leaderboard_model=leaderboards.models.Leaderboard,
-                              player_model=leaderboards.models.Player).create_leaderboards()
+        TrueskillCalculations(tournament_model=Tournament,
+                              leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
 
     def add_tournament(self, tournament_data, options):
-        new_tournament = leaderboards.models.Tournament(
+        new_tournament = Tournament(
             name=tournament_data['name'],
             challonge_id=tournament_data['challonge_id'],
             challonge_url=tournament_data['challonge'],
             date=tournament_data['date'],
             notability=tournament_data['notability'],
-            ruleset=leaderboards.models.Ruleset.objects.get_or_create(ruleset=tournament_data['ruleset'])[0],
+            ruleset=Ruleset.objects.get_or_create(ruleset=tournament_data['ruleset'])[0],
             description=tournament_data['description']
         )
         new_tournament.save()
@@ -74,7 +74,7 @@ class Command(BaseCommand):
             if 'description' in match:
                 db_match.description = match['description']
             if 'ruleset' in match:
-                db_match.ruleset = leaderboards.models.Ruleset.objects.get_or_create(
+                db_match.ruleset = Ruleset.objects.get_or_create(
                     ruleset=match['ruleset'])[0]
             db_match.save()
         new_tournament.save()
@@ -98,20 +98,20 @@ class Command(BaseCommand):
         return tournament_organizer
 
     def check_player_in_db(self, player_name, options):
-        if leaderboards.models.PlayerAlias.objects.filter(alias=player_name.lower()).exists():
+        if PlayerAlias.objects.filter(alias=player_name.lower()).exists():
             pass
         else:
             if options['verification']:
                 self.new_player_prompt(player_name)
             else:
-                new_player = leaderboards.models.Player.objects.create(name=player_name)
+                new_player = Player.objects.create(name=player_name)
                 new_player.playeralias_set.create(alias=player_name.lower())
                 new_player.save()
-        return leaderboards.models.Player.objects.get(playeralias__alias=player_name.lower())
+        return Player.objects.get(playeralias__alias=player_name.lower())
 
     def new_player_prompt(self, player_name):
         self.stdout.write('Players in the database:')
-        for player in leaderboards.models.Player.objects.all():
+        for player in Player.objects.all():
             self.stdout.write(f'{player.pk}. {player.name}')
         self.stdout.write(f'Couldn\'t find player {player_name} in the database. Do you want to add an alias to '
                           'existing player? If no new player is going to be added into database')
@@ -119,13 +119,13 @@ class Command(BaseCommand):
         while user_input not in 'yYnN':
             user_input = input('(y/n):')
         if user_input in 'nN':
-            new_player = leaderboards.models.Player.objects.create(name=player_name)
+            new_player = Player.objects.create(name=player_name)
             new_player.playeralias_set.create(alias=player_name.lower())
             new_player.save()
             self.stdout.write(self.style.SUCCESS('Successfully added new player into database'))
         else:
             chosen_pk = input('Choose a player by typing in his number:')
-            chosen_player = leaderboards.models.Player.objects.get(pk=chosen_pk)
+            chosen_player = Player.objects.get(pk=chosen_pk)
             chosen_player.playeralias_set.create(alias=player_name.lower())
             chosen_player.save()
             self.stdout.write(self.style.SUCCESS(f'Successfully added new alias for {chosen_player}'))
