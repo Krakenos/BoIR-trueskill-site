@@ -5,6 +5,9 @@ from django.conf import settings
 import os
 import glob
 from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
+from django.contrib.auth.models import User
+import string
+import random
 
 
 class Command(BaseCommand):
@@ -20,6 +23,10 @@ class Command(BaseCommand):
                             action='store_true',
                             dest='verification',
                             help='Allows manual players verification, before adding them into database')
+        parser.add_argument('--adduser',
+                            action='store_true',
+                            dest='add_user',
+                            help='Adds tournament organizers into database as users')
 
     def handle(self, *args, **options):
         if options['bulk']:
@@ -56,6 +63,8 @@ class Command(BaseCommand):
             description=tournament_data['description']
         )
         new_tournament.save()
+        if options['add_user']:
+            self.add_user(tournament_data, new_tournament)
         for match in tournament_data['matchups']:
             match_winner = self.check_player_in_db(match['winner'], options)
             match_loser = self.check_player_in_db(match['loser'], options)
@@ -70,6 +79,23 @@ class Command(BaseCommand):
             db_match.save()
         new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
+
+    def add_user(self, tournament_data, tournament):
+        for organizer in tournament_data['organizer']:
+            tournament_organizer = self.get_or_create_user(organizer)
+            tournament.organizers.add(tournament_organizer)
+        tournament.save()
+
+    @staticmethod
+    def get_or_create_user(name):
+        try:
+            tournament_organizer = User.objects.get(username=name)
+        except User.DoesNotExist:
+            tournament_organizer = User.objects.create_user(username=name, password=''.join(
+                random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(10)))  # random pass
+            tournament_organizer.is_staff = False
+            tournament_organizer.is_superuser = False
+        return tournament_organizer
 
     def check_player_in_db(self, player_name, options):
         if leaderboards.models.PlayerAlias.objects.filter(alias=player_name.lower()).exists():
