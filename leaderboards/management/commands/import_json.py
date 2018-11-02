@@ -81,6 +81,10 @@ class Command(BaseCommand):
             db_match.save()
         if 'winner' in tournament_data:
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
+        for video in tournament_data['videos']:
+            TournamentVod(tournament=new_tournament,
+                          description=video['description'],
+                          url=video['url']).save()
         new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
