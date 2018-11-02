@@ -1,8 +1,10 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 import leaderboards.models
 import json
 from django.conf import settings
 import os
+import glob
+from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
 
 
 class Command(BaseCommand):
@@ -10,16 +12,40 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('tourney_name', nargs='+', type=str)
+        parser.add_argument('--bulk',
+                            action='store_true',
+                            dest='bulk',
+                            help='Imports all the jsons from tournament_jsons folder')
+        parser.add_argument('--verify',
+                            action='store_true',
+                            dest='verification',
+                            help='Allows manual players verification, before adding them into database')
 
     def handle(self, *args, **options):
-        for file_name in options['tourney_name']:
-            try:
-                with open(os.path.join(settings.BASE_DIR,
-                                       'leaderboards/tournament_jsons',
-                                       file_name)) as tournament_json:
+        if options['bulk']:
+            for infile in sorted(
+                    glob.glob(os.path.join(settings.BASE_DIR, 'leaderboards', 'tournament_jsons', '*.json'))):
+                with open(infile) as tournament_json:
                     tournament_data = json.load(tournament_json)
-            except FileNotFoundError:
-                raise CommandError('File "%s" not found' % file_name)
+                self.add_tournament(tournament_data, options)
+            self.stdout.write(self.style.SUCCESS('Successfully added all tournaments'))
+        else:
+            for file_name in options['tourney_name']:
+                try:
+                    with open(os.path.join(settings.BASE_DIR,
+                                           'leaderboards', 'tournament_jsons',
+                                           file_name)) as tournament_json:
+                        tournament_data = json.load(tournament_json)
+                except FileNotFoundError:
+                    self.stdout.write(f"File {options['tourney_name']} not found")
+                    continue
+                self.add_tournament(tournament_data, options)
+        self.stdout.write('Calculating trueskill...')
+        TrueskillCalculations(tournament_model=leaderboards.models.Tournament,
+                              leaderboard_model=leaderboards.models.Leaderboard,
+                              player_model=leaderboards.models.Player).create_leaderboards()
+
+    def add_tournament(self, tournament_data, options):
         new_tournament = leaderboards.models.Tournament(
             name=tournament_data['name'],
             challonge_id=tournament_data['challonge_id'],
@@ -31,8 +57,8 @@ class Command(BaseCommand):
         )
         new_tournament.save()
         for match in tournament_data['matchups']:
-            match_winner = self.check_player_in_db(match['winner'])
-            match_loser = self.check_player_in_db(match['loser'])
+            match_winner = self.check_player_in_db(match['winner'], options)
+            match_loser = self.check_player_in_db(match['loser'], options)
             db_match = new_tournament.match_set.create(winner=match_winner,
                                                        loser=match_loser,
                                                        score=match['score'])
@@ -42,14 +68,19 @@ class Command(BaseCommand):
                 db_match.ruleset = leaderboards.models.Ruleset.objects.get_or_create(
                     ruleset=match['ruleset'])[0]
             db_match.save()
-        new_tournament.save(create_leaderboards=True)
+        new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
-    def check_player_in_db(self, player_name):
+    def check_player_in_db(self, player_name, options):
         if leaderboards.models.PlayerAlias.objects.filter(alias=player_name.lower()).exists():
             pass
         else:
-            self.new_player_prompt(player_name)
+            if options['verification']:
+                self.new_player_prompt(player_name)
+            else:
+                new_player = leaderboards.models.Player.objects.create(name=player_name)
+                new_player.playeralias_set.create(alias=player_name.lower())
+                new_player.save()
         return leaderboards.models.Player.objects.get(playeralias__alias=player_name.lower())
 
     def new_player_prompt(self, player_name):
