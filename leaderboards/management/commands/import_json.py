@@ -77,6 +77,8 @@ class Command(BaseCommand):
                 db_match.ruleset = Ruleset.objects.get_or_create(
                     ruleset=match['ruleset'])[0]
             db_match.save()
+        if 'winner' in tournament_data:
+            new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
         new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
