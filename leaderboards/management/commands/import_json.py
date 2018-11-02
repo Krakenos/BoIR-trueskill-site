@@ -78,6 +78,17 @@ class Command(BaseCommand):
                     ruleset=match['ruleset'])[0]
             else:
                 db_match.ruleset = new_tournament.ruleset
+            if db_match.ruleset.ruleset == 'mixed':
+                for round_number, round_details in enumerate(match['ruleset_per_round'], 1):
+                    db_round = RulesetPerRound(round_number=round_number,
+                                               match=db_match,
+                                               winner=Player.objects.get(
+                                                   playeralias__alias=round_details['winner'].lower()))
+                    if round_details['ruleset'] == "":  # Forfeits should have null/blank here
+                        pass
+                    else:
+                        db_round.ruleset = Ruleset.objects.get(ruleset=round_details['ruleset'])
+                    db_round.save()
             db_match.save()
         if 'winner' in tournament_data:
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
