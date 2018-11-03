@@ -23,7 +23,7 @@ def index(request):
 @cache_page(60 * 15)
 def get_leaderboard(request, leaderboard_type):
     queryset_object = Leaderboard.objects.select_related('player__id').filter(
-        leaderboard_type=leaderboard_type).order_by('placement')
+        leaderboard_type=leaderboard_type)
     leaderboard_list = list(
         queryset_object.values('placement', 'player__name', 'exposure', 'tournaments_played', 'matches_played'))
     data = {

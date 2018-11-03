@@ -6,6 +6,9 @@ from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalcul
 class Player(models.Model):
     name = models.CharField(max_length=200, unique=True)
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
@@ -31,12 +34,18 @@ class Ruleset(models.Model):
     ruleset = models.CharField(max_length=200)
     description = models.CharField(max_length=400, null=True, blank=True)
 
+    class Meta:
+        ordering = ['ruleset']
+
     def __str__(self):
         return self.ruleset
 
 
 class AllowedScore(models.Model):
     score = models.CharField(max_length=5)
+
+    class Meta:
+        ordering = ['score']
 
     def __str__(self):
         return self.score
@@ -144,6 +153,9 @@ class Leaderboard(models.Model):
     sigma = models.FloatField(null=True)
     tournaments_played = models.IntegerField(default=0)
     matches_played = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['placement']
 
     def __str__(self):
         return f'{self.leaderboard_type}: {self.placement}.{self.player}'
