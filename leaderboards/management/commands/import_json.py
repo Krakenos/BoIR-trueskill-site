@@ -65,15 +65,24 @@ class Command(BaseCommand):
             description=tournament_data['description']
         )
         new_tournament.save()
+        if new_tournament.ruleset.ruleset == 'team':
+            self.add_team(tournament_data, new_tournament, options)
         if options['add_user']:
             self.add_user(tournament_data, new_tournament)
         for match in tournament_data['matchups']:
-            match_winner = self.check_player_in_db(match['winner'], options)
-            match_loser = self.check_player_in_db(match['loser'], options)
             score = AllowedScore.objects.get_or_create(score=match['score'])[0]
-            db_match = new_tournament.match_set.create(winner=match_winner,
-                                                       loser=match_loser,
-                                                       score=score)
+            if new_tournament.ruleset.ruleset == 'team':
+                match_winner = Team.objects.get(tournament=new_tournament, name=match['winner'])
+                match_loser = Team.objects.get(tournament=new_tournament, name=match['loser'])
+                db_match = new_tournament.match_set.create(winner_team=match_winner,
+                                                           loser_team=match_loser,
+                                                           score=score)
+            else:
+                match_winner = self.check_player_in_db(match['winner'], options)
+                match_loser = self.check_player_in_db(match['loser'], options)
+                db_match = new_tournament.match_set.create(winner=match_winner,
+                                                           loser=match_loser,
+                                                           score=score)
             if 'description' in match:
                 db_match.description = match['description']
             if 'ruleset' in match:
@@ -93,7 +102,9 @@ class Command(BaseCommand):
                         db_round.ruleset = Ruleset.objects.get(ruleset=round_details['ruleset'])
                     db_round.save()
             db_match.save()
-        if 'winner' in tournament_data:
+        if ('winner' in tournament_data) and new_tournament.ruleset.ruleset == 'team':
+            new_tournament.winner_team = Team.objects.get(tournament=new_tournament, name=tournament_data['winner'])
+        elif ('winner' in tournament_data) and new_tournament.ruleset.ruleset != 'team':
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
         for video in tournament_data['videos']:
             Vod(tournament=new_tournament,
@@ -101,6 +112,14 @@ class Command(BaseCommand):
                 url=video['url']).save()
         new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
+
+    def add_team(self, tournament_data, new_tournament, options):
+        for team in tournament_data['squads']:
+            db_team = Team.objects.get_or_create(tournament=new_tournament, name=team['name'])[0]
+            for player in team['participants']:
+                db_player = self.check_player_in_db(player, options)
+                db_team.members.add(db_player)
+            db_team.save()
 
     def add_user(self, tournament_data, tournament):
         for organizer in tournament_data['organizer']:
