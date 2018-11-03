@@ -1,20 +1,22 @@
-from django.core.management.base import BaseCommand
-from leaderboards.models import *
-import json
-from django.conf import settings
-import os
 import glob
-from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
-from django.contrib.auth.models import User
-import string
+import json
+import os
 import random
+import string
+
+from django.conf import settings
+from django.contrib.auth.models import User
+from django.core.management.base import BaseCommand
+
+from leaderboards.models import *
+from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalculations
 
 
 class Command(BaseCommand):
     help = 'Imports tournament json into database'
 
     def add_arguments(self, parser):
-        parser.add_argument('tourney_name', nargs='+', type=str)
+        parser.add_argument('tourney_name', nargs='*', type=str)
         parser.add_argument('--bulk',
                             action='store_true',
                             dest='bulk',
