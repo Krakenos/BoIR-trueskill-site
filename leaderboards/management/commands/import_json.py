@@ -70,9 +70,10 @@ class Command(BaseCommand):
         for match in tournament_data['matchups']:
             match_winner = self.check_player_in_db(match['winner'], options)
             match_loser = self.check_player_in_db(match['loser'], options)
+            score = AllowedScore.objects.get_or_create(score=match['score'])[0]
             db_match = new_tournament.match_set.create(winner=match_winner,
                                                        loser=match_loser,
-                                                       score=match['score'])
+                                                       score=score)
             if 'description' in match:
                 db_match.description = match['description']
             if 'ruleset' in match:
@@ -95,9 +96,9 @@ class Command(BaseCommand):
         if 'winner' in tournament_data:
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
         for video in tournament_data['videos']:
-            TournamentVod(tournament=new_tournament,
-                          description=video['description'],
-                          url=video['url']).save()
+            Vod(tournament=new_tournament,
+                description=video['description'],
+                url=video['url']).save()
         new_tournament.save()
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
