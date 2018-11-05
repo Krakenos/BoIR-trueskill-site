@@ -30,3 +30,12 @@ def get_leaderboard(request, leaderboard_type):
         'data': leaderboard_list
     }
     return JsonResponse(data)
+
+
+def get_ratings(request, rating_type):
+    leaderboards = Leaderboard.objects.select_related('player__name')
+    querydict = leaderboards.filter(leaderboard_type=rating_type).values('player__name', 'mu', 'sigma')
+    player_data = {
+        p['player__name']: {'mu': p['mu'], 'sigma': p['sigma']} for p in querydict
+    }
+    return JsonResponse({'data': player_data})
