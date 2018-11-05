@@ -23,10 +23,19 @@ def index(request):
 @cache_page(60 * 15)
 def get_leaderboard(request, leaderboard_type):
     queryset_object = Leaderboard.objects.select_related('player__id').filter(
-        leaderboard_type=leaderboard_type).order_by('placement')
+        leaderboard_type=leaderboard_type)
     leaderboard_list = list(
         queryset_object.values('placement', 'player__name', 'exposure', 'tournaments_played', 'matches_played'))
     data = {
         'data': leaderboard_list
     }
     return JsonResponse(data)
+
+
+def get_ratings(request, rating_type):
+    leaderboards = Leaderboard.objects.select_related('player__name')
+    querydict = leaderboards.filter(leaderboard_type=rating_type).values('player__name', 'mu', 'sigma')
+    player_data = {
+        p['player__name']: {'mu': p['mu'], 'sigma': p['sigma']} for p in querydict
+    }
+    return JsonResponse({'data': player_data})

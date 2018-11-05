@@ -1,6 +1,6 @@
 # The Binding of Isaac: Rebirth Tournament Leaderboards
 
-This is a repository for [isaac rankings site](https://http://isaacrankings.com/) that contains leaderboards which main purpose is to be a seeding method for racing tournaments for *[The Binding of Isaac: Rebirth](http://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/)*. Algorithm used to calculate ratings is [TrueSkill](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/01/NIPS2006_0688.pdf)
+This is a repository for [isaac rankings site](https://isaacrankings.com/) that contains leaderboards which main purpose is to be a seeding method for racing tournaments for *[The Binding of Isaac: Rebirth](http://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/)*. Algorithm used to calculate ratings is [TrueSkill](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/01/NIPS2006_0688.pdf)
 
 Furthermore, by using the [TrueSkill algorithm](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/01/NIPS2006_0688.pdf) on every 1v1 matchup, we can create a leaderboard for the top players.
 
