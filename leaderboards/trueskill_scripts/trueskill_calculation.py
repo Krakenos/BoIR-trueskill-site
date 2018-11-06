@@ -26,7 +26,7 @@ class TrueskillCalculations:
         self.tournament_limit = tournament_limit
 
     def create_leaderboards(self):
-        for tournament in self.tournament.objects.all().order_by('date'):
+        for tournament in self.tournament.objects.all().order_by('date', 'id'):
             players_in_tourney = []
             players_in_seeded_tourney = []
             players_in_unseeded_tourney = []
