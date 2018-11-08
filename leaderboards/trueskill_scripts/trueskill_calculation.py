@@ -1,12 +1,9 @@
-import trueskill
 from collections import defaultdict
+
+import trueskill
 
 
 class TrueskillCalculations:
-
-    racers = defaultdict(dict)
-    seeded_racers = defaultdict(dict)
-    unseeded_racers = defaultdict(dict)
 
     def __init__(self, tournament_limit=2, seeded_multiplier=4, mixed_multiplier=2, tournament_model=object,
                  leaderboard_model=object, player_model=object):
@@ -18,6 +15,9 @@ class TrueskillCalculations:
         :param seeded_multiplier: Determines how much impact have seeded races in mixed leaderboard
         :param mixed_multiplier:  Determines how much impact have mixed races in the leaderboard
         """
+        self.racers = defaultdict(dict)
+        self.seeded_racers = defaultdict(dict)
+        self.unseeded_racers = defaultdict(dict)
         self.tournament = tournament_model
         self.leaderboard = leaderboard_model
         self.player = player_model
