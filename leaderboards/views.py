@@ -9,13 +9,13 @@ from django.db.models import Q
 def index(request):
     context = {
         'mixed_events': Tournament.objects.filter(~Q(ruleset__ruleset='other') & ~Q(ruleset__ruleset='team')).order_by(
-            '-date'),
+            '-date', '-id'),
         'seeded_events': Tournament.objects.filter(
             Q(ruleset__ruleset='seeded') | Q(ruleset__ruleset='multiple')).order_by(
-            '-date'),
+            '-date', '-id'),
         'unseeded_events': Tournament.objects.filter(
             ~Q(ruleset__ruleset='other') & ~Q(ruleset__ruleset='team') & ~Q(ruleset__ruleset='seeded')).order_by(
-            '-date')
+            '-date', '-id')
     }
     return render(request, 'leaderboards/index.html', context)
 
