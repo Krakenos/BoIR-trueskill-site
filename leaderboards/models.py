@@ -65,7 +65,7 @@ class Tournament(models.Model):
     challonge_url = models.URLField(null=True, blank=True)
     organizers = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True)
     date = models.DateField()
-    notability = models.CharField(max_length=200)
+    notability = models.CharField(max_length=200, default='minor')
     ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
     description = models.CharField(max_length=400, null=True, blank=True)
     winner = models.ForeignKey(Player, null=True, blank=True, on_delete=models.CASCADE, related_name='tournament_wins')
