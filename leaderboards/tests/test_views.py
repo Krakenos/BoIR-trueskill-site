@@ -19,6 +19,13 @@ def create_leaderboard_entry(leaderboard_type, place, player_name, exposure, tou
                                       matches_played=matches_played)
 
 
+def create_rating(leaderboard_type, player_name, mu, sigma):
+    return Leaderboard.objects.create(leaderboard_type=leaderboard_type,
+                                      player=Player.objects.create(name=player_name),
+                                      mu=mu,
+                                      sigma=sigma)
+
+
 class IndexViewTests(TestCase):
     def setUp(self):
         cache.clear()
@@ -355,3 +362,46 @@ class AjaxLeaderboardsViewTests(TestCase):
                                                           'tournaments_played': 3,
                                                           'matches_played': 3},
                                                          ]})
+
+
+class ApiRatingsViewTests(TestCase):
+
+    def setUp(self):
+        cache.clear()
+
+    def test_seeded_with_no_ratings(self):
+        response = self.client.get(reverse('get_ratings', args=['seeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {}})
+
+    def test_unseeded_with_no_ratings(self):
+        response = self.client.get(reverse('get_ratings', args=['unseeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {}})
+
+    def test_mixed_with_no_ratings(self):
+        response = self.client.get(reverse('get_ratings', args=['mixed']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {}})
+
+    def test_seeded_with_rating(self):
+        create_rating('seeded', 'Player_1', 25, 3)
+        response = self.client.get(reverse('get_ratings', args=['seeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {'Player_1': {'mu': 25,
+                                                                      'sigma': 3}}})
+
+    def test_unseeded_with_rating(self):
+        create_rating('unseeded', 'Player_2', 13, 2)
+        response = self.client.get(reverse('get_ratings', args=['unseeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {'Player_2': {'mu': 13,
+                                                                      'sigma': 2}}})
+
+    def test_mixed_with_rating(self):
+        create_rating('mixed', 'Player_3', 40, 5)
+        response = self.client.get(reverse('get_ratings', args=['mixed']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': {'Player_3': {'mu': 40,
+                                                                      'sigma': 5}}})
+
