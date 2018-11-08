@@ -106,3 +106,93 @@ class IndexViewTests(TestCase):
         self.assertQuerysetEqual(response.context['mixed_events'], [])
         self.assertQuerysetEqual(response.context['seeded_events'], [])
         self.assertQuerysetEqual(response.context['unseeded_events'], [])
+
+    def test_mixed_events_ordering_with_different_dates(self):
+        """
+        Events should be ordered by their date, newest being on top
+        """
+        unseeded_ruleset = create_ruleset('unseeded')
+        create_tournament('Unseeded Tourney 4', '2018-05-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 1', '2018-05-05', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 3', '2018-05-07', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 2', '2018-05-06', unseeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['mixed_events'],
+                                 ['<Tournament: Unseeded Tourney 4>', '<Tournament: Unseeded Tourney 3>',
+                                  '<Tournament: Unseeded Tourney 2>', '<Tournament: Unseeded Tourney 1>'])
+
+    def test_seeded_events_ordering_with_different_dates(self):
+        """
+        Events should be ordered by their date, newest being on top
+        """
+        seeded_ruleset = create_ruleset('seeded')
+        create_tournament('Seeded Tourney 4', '2018-05-08', seeded_ruleset)
+        create_tournament('Seeded Tourney 1', '2018-05-05', seeded_ruleset)
+        create_tournament('Seeded Tourney 3', '2018-05-07', seeded_ruleset)
+        create_tournament('Seeded Tourney 2', '2018-05-06', seeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['seeded_events'],
+                                 ['<Tournament: Seeded Tourney 4>', '<Tournament: Seeded Tourney 3>',
+                                  '<Tournament: Seeded Tourney 2>', '<Tournament: Seeded Tourney 1>'])
+
+    def test_unseeded_events_ordering_with_different_dates(self):
+        """
+        Events should be ordered by their date, newest being on top
+        """
+        unseeded_ruleset = create_ruleset('unseeded')
+        create_tournament('Unseeded Tourney 4', '2018-05-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 1', '2018-05-05', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 3', '2018-05-07', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 2', '2018-05-06', unseeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['unseeded_events'],
+                                 ['<Tournament: Unseeded Tourney 4>', '<Tournament: Unseeded Tourney 3>',
+                                  '<Tournament: Unseeded Tourney 2>', '<Tournament: Unseeded Tourney 1>'])
+
+    def test_mixed_events_ordering_with_the_same_dates(self):
+        """
+        If date of the tournaments are the same, the newest added should be on top
+        """
+        unseeded_ruleset = create_ruleset('unseeded')
+        create_tournament('Unseeded Tourney 1', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 2', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 3', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 4', '2018-10-08', unseeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['mixed_events'],
+                                 ['<Tournament: Unseeded Tourney 4>', '<Tournament: Unseeded Tourney 3>',
+                                  '<Tournament: Unseeded Tourney 2>', '<Tournament: Unseeded Tourney 1>'])
+
+    def test_seeded_events_ordering_with_the_same_dates(self):
+        """
+        If date of the tournaments are the same, the newest added should be on top
+        """
+        seeded_ruleset = create_ruleset('seeded')
+        create_tournament('Seeded Tourney 1', '2018-10-08', seeded_ruleset)
+        create_tournament('Seeded Tourney 2', '2018-10-08', seeded_ruleset)
+        create_tournament('Seeded Tourney 3', '2018-10-08', seeded_ruleset)
+        create_tournament('Seeded Tourney 4', '2018-10-08', seeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['seeded_events'],
+                                 ['<Tournament: Seeded Tourney 4>', '<Tournament: Seeded Tourney 3>',
+                                  '<Tournament: Seeded Tourney 2>', '<Tournament: Seeded Tourney 1>'])
+
+    def test_unseeded_events_ordering_with_the_same_dates(self):
+        """
+        If date of the tournaments are the same, the newest added should be on top
+        """
+        unseeded_ruleset = create_ruleset('unseeded')
+        create_tournament('Unseeded Tourney 1', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 2', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 3', '2018-10-08', unseeded_ruleset)
+        create_tournament('Unseeded Tourney 4', '2018-10-08', unseeded_ruleset)
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertQuerysetEqual(response.context['unseeded_events'],
+                                 ['<Tournament: Unseeded Tourney 4>', '<Tournament: Unseeded Tourney 3>',
+                                  '<Tournament: Unseeded Tourney 2>', '<Tournament: Unseeded Tourney 1>'])
