@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
-from leaderboards.models import Tournament, Ruleset
+from leaderboards.models import Tournament, Ruleset, Leaderboard, Player
 from django.core.cache import cache
 
 
@@ -10,6 +10,13 @@ def create_ruleset(name):
 
 def create_tournament(name, date, ruleset):
     return Tournament.objects.create(name=name, date=date, ruleset=ruleset)
+
+
+def create_leaderboard_entry(leaderboard_type, place, player_name, exposure, tournaments_played, matches_played):
+    return Leaderboard.objects.create(leaderboard_type=leaderboard_type, placement=place,
+                                      player=Player.objects.create(name=player_name),
+                                      exposure=exposure, tournaments_played=tournaments_played,
+                                      matches_played=matches_played)
 
 
 class IndexViewTests(TestCase):
@@ -196,3 +203,155 @@ class IndexViewTests(TestCase):
         self.assertQuerysetEqual(response.context['unseeded_events'],
                                  ['<Tournament: Unseeded Tourney 4>', '<Tournament: Unseeded Tourney 3>',
                                   '<Tournament: Unseeded Tourney 2>', '<Tournament: Unseeded Tourney 1>'])
+
+
+class AjaxLeaderboardsViewTests(TestCase):
+    def setUp(self):
+        cache.clear()
+
+    def test_seeded_leaderboard_with_no_entries(self):
+        response = self.client.get(reverse('get_leaderboard', args=['seeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': []})
+
+    def test_mixed_leaderboard_with_no_entries(self):
+        response = self.client.get(reverse('get_leaderboard', args=['mixed']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': []})
+
+    def test_unseeded_leaderboard_with_no_entries(self):
+        response = self.client.get(reverse('get_leaderboard', args=['unseeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': []})
+
+    def test_seeded_leaderboard_with_entry(self):
+        create_leaderboard_entry(leaderboard_type='seeded', place=1, player_name='Player_1', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['seeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1}]})
+
+    def test_mixed_leaderboard_with_entry(self):
+        create_leaderboard_entry(leaderboard_type='mixed', place=1, player_name='Player_1', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['mixed']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1}]})
+
+    def test_unseeded_leaderboard_with_entry(self):
+        create_leaderboard_entry(leaderboard_type='unseeded', place=1, player_name='Player_1', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['unseeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1}]})
+
+    def test_seeded_leaderboard_ordering(self):
+        """
+        Leaderboard should be ordered by placement
+        """
+        create_leaderboard_entry(leaderboard_type='seeded', place=3, player_name='Player_3', exposure=10,
+                                 tournaments_played=3,
+                                 matches_played=3)
+        create_leaderboard_entry(leaderboard_type='seeded', place=1, player_name='Player_1', exposure=20,
+                                 tournaments_played=1,
+                                 matches_played=4)
+        create_leaderboard_entry(leaderboard_type='seeded', place=2, player_name='Player_2', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['seeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 20,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 4},
+                                                         {'placement': 2,
+                                                          'player__name': 'Player_2',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1},
+                                                         {'placement': 3,
+                                                          'player__name': 'Player_3',
+                                                          'exposure': 10,
+                                                          'tournaments_played': 3,
+                                                          'matches_played': 3},
+                                                         ]})
+
+    def test_mixed_leaderboard_ordering(self):
+        """
+        Leaderboard should be ordered by placement
+        """
+        create_leaderboard_entry(leaderboard_type='mixed', place=3, player_name='Player_3', exposure=10,
+                                 tournaments_played=3,
+                                 matches_played=3)
+        create_leaderboard_entry(leaderboard_type='mixed', place=1, player_name='Player_1', exposure=20,
+                                 tournaments_played=1,
+                                 matches_played=4)
+        create_leaderboard_entry(leaderboard_type='mixed', place=2, player_name='Player_2', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['mixed']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 20,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 4},
+                                                         {'placement': 2,
+                                                          'player__name': 'Player_2',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1},
+                                                         {'placement': 3,
+                                                          'player__name': 'Player_3',
+                                                          'exposure': 10,
+                                                          'tournaments_played': 3,
+                                                          'matches_played': 3},
+                                                         ]})
+
+    def test_unseeded_leaderboard_ordering(self):
+        """
+        Leaderboard should be ordered by placement
+        """
+        create_leaderboard_entry(leaderboard_type='unseeded', place=3, player_name='Player_3', exposure=10,
+                                 tournaments_played=3,
+                                 matches_played=3)
+        create_leaderboard_entry(leaderboard_type='unseeded', place=1, player_name='Player_1', exposure=20,
+                                 tournaments_played=1,
+                                 matches_played=4)
+        create_leaderboard_entry(leaderboard_type='unseeded', place=2, player_name='Player_2', exposure=15,
+                                 tournaments_played=1,
+                                 matches_played=1)
+        response = self.client.get(reverse('get_leaderboard', args=['unseeded']))
+        self.assertEqual(response.status_code, 200)
+        self.assertJSONEqual(response.content, {'data': [{'placement': 1,
+                                                          'player__name': 'Player_1',
+                                                          'exposure': 20,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 4},
+                                                         {'placement': 2,
+                                                          'player__name': 'Player_2',
+                                                          'exposure': 15,
+                                                          'tournaments_played': 1,
+                                                          'matches_played': 1},
+                                                         {'placement': 3,
+                                                          'player__name': 'Player_3',
+                                                          'exposure': 10,
+                                                          'tournaments_played': 3,
+                                                          'matches_played': 3},
+                                                         ]})
