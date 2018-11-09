@@ -735,7 +735,7 @@ class TrueskillCalculationsTests(TestCase):
 
     def test_tournament_ordering_with_the_same_dates(self):
         """
-        When tournaments have the same dates they should be ordered in order they were added.
+        When tournaments have the same dates they should be calculated in order they were added.
         """
         tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
         tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
@@ -753,3 +753,254 @@ class TrueskillCalculationsTests(TestCase):
         player_2, player_1 = trueskill.rate_1vs1(player_2, player_1)
         self.assertTrueskillEqual(player_1, db_player_1)
         self.assertTrueskillEqual(player_2, db_player_2)
+
+    def test_default_tournament_limit_in_unseeded_leaderboard(self):
+        """
+        Check if default limit of 2 tournaments to show on the leaderboard works properly
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        TrueskillCalculations(tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='unseeded')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='unseeded')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='unseeded').exists())
+
+    def test_default_tournament_limit_in_mixed_leaderboard(self):
+        """
+        Check if default limit of 2 tournaments to show on the leaderboard works properly
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        TrueskillCalculations(tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='mixed')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='mixed')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='mixed').exists())
+
+    def test_default_tournament_limit_in_seeded_leaderboard(self):
+        """
+        Check if default limit of 2 tournaments to show on the leaderboard works properly
+        """
+        tourney_1 = create_tournament('Seeded Tournament 1', '2018-05-10', 'seeded')
+        tourney_2 = create_tournament('Seeded Tournament 2', '2018-05-10', 'seeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        TrueskillCalculations(tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='seeded')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='seeded')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='seeded').exists())
+
+    def test_custom_tournament_limit_in_unseeded_leaderboard(self):
+        """
+        Check if custom tournament limit works as expected
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        tourney_3 = create_tournament('Unseeded Tournament 3', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        create_match('player_1', 'player_3', tourney_3)
+        TrueskillCalculations(tournament_limit=3, tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='unseeded')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='unseeded')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='unseeded').exists())
+
+    def test_custom_tournament_limit_in_mixed_leaderboard(self):
+        """
+        Check if custom tournament limit works as expected
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        tourney_3 = create_tournament('Unseeded Tournament 3', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        create_match('player_1', 'player_3', tourney_3)
+        TrueskillCalculations(tournament_limit=3, tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='mixed')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='mixed')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='mixed').exists())
+
+    def test_custom_tournament_limit_in_seeded_leaderboard(self):
+        """
+        Check if custom tournament limit works as expected
+        """
+        tourney_1 = create_tournament('Seeded Tournament 1', '2018-05-10', 'seeded')
+        tourney_2 = create_tournament('Seeded Tournament 2', '2018-05-10', 'seeded')
+        tourney_3 = create_tournament('Seeded Tournament 3', '2018-05-10', 'seeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_3', tourney_2)
+        create_match('player_1', 'player_3', tourney_3)
+        TrueskillCalculations(tournament_limit=3, tournament_model=Tournament, leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_2',
+                          leaderboard_type='seeded')
+        self.assertRaises(Leaderboard.DoesNotExist, Leaderboard.objects.get, player__name='player_3',
+                          leaderboard_type='seeded')
+        self.assertTrue(Leaderboard.objects.filter(player__name='player_1', leaderboard_type='seeded').exists())
+
+    def test_custom_seeded_multiplier_for_mixed_leaderboard(self):
+        """
+        Testing if changing default seeded multiplier works as expected
+        """
+        tourney = create_tournament('Seeded Tournament', '2018-05-10', 'seeded')
+        create_match('player_1', 'player_2', tourney)
+        custom_multiplier = 5
+        TrueskillCalculations(seeded_multiplier=custom_multiplier, tournament_limit=0, tournament_model=Tournament,
+                              leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        db_player_1 = get_rating('player_1', 'mixed')
+        db_player_2 = get_rating('player_2', 'mixed')
+        player_1 = trueskill.Rating(25)
+        player_2 = trueskill.Rating(25)
+        for _ in range(custom_multiplier):
+            player_1, player_2 = trueskill.rate_1vs1(player_1, player_2)
+        self.assertTrueskillEqual(player_1, db_player_1)
+        self.assertTrueskillEqual(player_2, db_player_2)
+
+    def test_custom_mixed_multiplier_for_mixed_leaderboard(self):
+        """
+        Testing if changing default mixed multiplier works as expected
+        """
+        tourney = create_tournament('Mixed Tournament', '2018-05-10', 'mixed')
+        create_match('player_1', 'player_2', tourney)
+        custom_multiplier = 5
+        TrueskillCalculations(mixed_multiplier=custom_multiplier, tournament_limit=0, tournament_model=Tournament,
+                              leaderboard_model=Leaderboard,
+                              player_model=Player).create_leaderboards()
+        db_player_1 = get_rating('player_1', 'mixed')
+        db_player_2 = get_rating('player_2', 'mixed')
+        player_1 = trueskill.Rating(25)
+        player_2 = trueskill.Rating(25)
+        for _ in range(custom_multiplier):
+            player_1, player_2 = trueskill.rate_1vs1(player_1, player_2)
+        self.assertTrueskillEqual(player_1, db_player_1)
+        self.assertTrueskillEqual(player_2, db_player_2)
+
+    def test_match_incrementation_in_mixed_leaderboard(self):
+        """
+        Test if matches played are incremented properly
+        """
+        tourney = create_tournament('Unseeded Tournament', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney)
+        create_match('player_1', 'player_3', tourney)
+        create_match('player_1', 'player_4', tourney)
+        create_match('player_3', 'player_2', tourney)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'mixed')
+        db_player_2 = get_rating('player_2', 'mixed')
+        db_player_3 = get_rating('player_3', 'mixed')
+        db_player_4 = get_rating('player_4', 'mixed')
+        self.assertEqual(db_player_1.matches_played, 3)
+        self.assertEqual(db_player_2.matches_played, 2)
+        self.assertEqual(db_player_3.matches_played, 2)
+        self.assertEqual(db_player_4.matches_played, 1)
+
+    def test_match_incrementation_in_seeded_leaderboard(self):
+        """
+        Test if matches played are incremented properly
+        """
+        tourney = create_tournament('Seeded Tournament', '2018-05-10', 'seeded')
+        create_match('player_1', 'player_2', tourney)
+        create_match('player_1', 'player_3', tourney)
+        create_match('player_1', 'player_4', tourney)
+        create_match('player_3', 'player_2', tourney)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'seeded')
+        db_player_2 = get_rating('player_2', 'seeded')
+        db_player_3 = get_rating('player_3', 'seeded')
+        db_player_4 = get_rating('player_4', 'seeded')
+        self.assertEqual(db_player_1.matches_played, 3)
+        self.assertEqual(db_player_2.matches_played, 2)
+        self.assertEqual(db_player_3.matches_played, 2)
+        self.assertEqual(db_player_4.matches_played, 1)
+
+    def test_match_incrementation_in_unseeded_leaderboard(self):
+        """
+        Test if matches played are incremented properly
+        """
+        tourney = create_tournament('Unseeded Tournament', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney)
+        create_match('player_1', 'player_3', tourney)
+        create_match('player_1', 'player_4', tourney)
+        create_match('player_3', 'player_2', tourney)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'unseeded')
+        db_player_2 = get_rating('player_2', 'unseeded')
+        db_player_3 = get_rating('player_3', 'unseeded')
+        db_player_4 = get_rating('player_4', 'unseeded')
+        self.assertEqual(db_player_1.matches_played, 3)
+        self.assertEqual(db_player_2.matches_played, 2)
+        self.assertEqual(db_player_3.matches_played, 2)
+        self.assertEqual(db_player_4.matches_played, 1)
+
+    def test_tournaments_incrementation_in_mixed_leaderboard(self):
+        """
+        Test if tournaments played are incremented properly
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        tourney_3 = create_tournament('Unseeded Tournament 3', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_2', tourney_2)
+        create_match('player_3', 'player_2', tourney_3)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'mixed')
+        db_player_2 = get_rating('player_2', 'mixed')
+        db_player_3 = get_rating('player_3', 'mixed')
+        self.assertEqual(db_player_1.tournaments_played, 2)
+        self.assertEqual(db_player_2.tournaments_played, 3)
+        self.assertEqual(db_player_3.tournaments_played, 1)
+
+    def test_tournaments_incrementation_in_unseeded_leaderboard(self):
+        """
+        Test if tournaments played are incremented properly
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'unseeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'unseeded')
+        tourney_3 = create_tournament('Unseeded Tournament 3', '2018-05-10', 'unseeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_2', tourney_2)
+        create_match('player_3', 'player_2', tourney_3)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'unseeded')
+        db_player_2 = get_rating('player_2', 'unseeded')
+        db_player_3 = get_rating('player_3', 'unseeded')
+        self.assertEqual(db_player_1.tournaments_played, 2)
+        self.assertEqual(db_player_2.tournaments_played, 3)
+        self.assertEqual(db_player_3.tournaments_played, 1)
+
+    def test_tournaments_incrementation_in_seeded_leaderboard(self):
+        """
+        Test if tournaments played are incremented properly
+        """
+        tourney_1 = create_tournament('Unseeded Tournament 1', '2018-05-10', 'seeded')
+        tourney_2 = create_tournament('Unseeded Tournament 2', '2018-05-10', 'seeded')
+        tourney_3 = create_tournament('Unseeded Tournament 3', '2018-05-10', 'seeded')
+        create_match('player_1', 'player_2', tourney_1)
+        create_match('player_1', 'player_2', tourney_2)
+        create_match('player_3', 'player_2', tourney_3)
+        create_leaderboard_without_limit()
+        db_player_1 = get_rating('player_1', 'seeded')
+        db_player_2 = get_rating('player_2', 'seeded')
+        db_player_3 = get_rating('player_3', 'seeded')
+        self.assertEqual(db_player_1.tournaments_played, 2)
+        self.assertEqual(db_player_2.tournaments_played, 3)
+        self.assertEqual(db_player_3.tournaments_played, 1)
