@@ -57,15 +57,19 @@ class TrueskillCalculations:
                             self.initiate_player(match, players_in_tourney, unseeded=players_in_unseeded_tourney)
                             self.calculate_rating(match, self.racers)
                             self.calculate_rating(match, self.unseeded_racers)
-                        # TODO Add logic for mixed ruleset here
+                        elif match.ruleset.ruleset == 'mixed':
+                            self.initiate_player(match, players_in_tourney, unseeded=players_in_unseeded_tourney)
+                            for _ in range(self.mixed_multiplier):
+                                self.calculate_rating(match, self.racers)
+                            self.calculate_rating(match, self.unseeded_racers)
                 else:  # team, other, and any undefined ruleset
                     continue
         mixed_leaderboard = self.calculate_places(self.racers)
         unseeded_leaderboard = self.calculate_places(self.unseeded_racers)
-        seeded_learderboard = self.calculate_places(self.seeded_racers)
+        seeded_leaderboard = self.calculate_places(self.seeded_racers)
         self.export_leaderboard_to_db('mixed', mixed_leaderboard)
         self.export_leaderboard_to_db('unseeded', unseeded_leaderboard)
-        self.export_leaderboard_to_db('seeded', seeded_learderboard)
+        self.export_leaderboard_to_db('seeded', seeded_leaderboard)
 
     def export_leaderboard_to_db(self, leaderboard_type: str, leaderboard_list):
         for record in leaderboard_list:
