@@ -1,8 +1,9 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.cache import cache_page
-from .models import Leaderboard, Tournament
 from django.db.models import Q
+from django.http import JsonResponse, Http404
+from django.shortcuts import render
+from django.views.decorators.cache import cache_page
+
+from .models import Leaderboard, Tournament
 
 
 @cache_page(60 * 15)
@@ -22,6 +23,8 @@ def index(request):
 
 @cache_page(60 * 15)
 def get_leaderboard(request, leaderboard_type):
+    if leaderboard_type not in ['seeded', 'unseeded', 'mixed']:
+        raise Http404("This leaderboard doesn't exist")
     queryset_object = Leaderboard.objects.select_related('player__id').filter(
         leaderboard_type=leaderboard_type)
     leaderboard_list = list(
@@ -33,6 +36,8 @@ def get_leaderboard(request, leaderboard_type):
 
 
 def get_ratings(request, rating_type):
+    if rating_type not in ['seeded', 'unseeded', 'mixed']:
+        raise Http404("This rating type doesn't exist")
     leaderboards = Leaderboard.objects.select_related('player__name')
     querydict = leaderboards.filter(leaderboard_type=rating_type).values('player__name', 'mu', 'sigma')
     player_data = {

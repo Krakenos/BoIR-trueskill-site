@@ -1,7 +1,8 @@
+from django.core.cache import cache
 from django.test import TestCase
 from django.urls import reverse
+
 from leaderboards.models import Tournament, Ruleset, Leaderboard, Player
-from django.core.cache import cache
 
 
 def create_ruleset(name):
@@ -363,6 +364,13 @@ class AjaxLeaderboardsViewTests(TestCase):
                                                           'matches_played': 3},
                                                          ]})
 
+    def test_unknown_leaderboard(self):
+        """
+        Unknown leaderboard type should raise 404
+        """
+        response = self.client.get(reverse('get_leaderboard', args=['unknown']))
+        self.assertEqual(response.status_code, 404)
+
 
 class ApiRatingsViewTests(TestCase):
 
@@ -405,3 +413,12 @@ class ApiRatingsViewTests(TestCase):
         self.assertJSONEqual(response.content, {'data': {'Player_3': {'mu': 40,
                                                                       'sigma': 5}}})
 
+    def test_unknown_with_ratings(self):
+        """
+        Rating type that's unknown/incorrect should raise 404
+        """
+        create_rating('seeded', 'Player_1', 25, 3)
+        create_rating('unseeded', 'Player_2', 13, 2)
+        create_rating('mixed', 'Player_3', 40, 5)
+        response = self.client.get(reverse('get_ratings', args=['unknown']))
+        self.assertEqual(response.status_code, 404)
