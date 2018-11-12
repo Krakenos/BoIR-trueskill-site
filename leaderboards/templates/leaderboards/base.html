@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet"
+          href="{% block stylesheet %}https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css{% endblock %}">
+    {% block extrastyle %}{% endblock %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+<div class="ui inverted menu" style="border-radius:0">
+    {% comment %}    <div class="item">
+        <div class="ui inverted basic labeled icon button" id="menu_button">
+            <i class="bars icon"></i>
+            Menu
+        </div>
+    </div>{% endcomment %}
+
+    <div class="right menu">
+        {% if user.is_authenticated %}
+            {% if user.is_staff %}
+                <div class="item">
+                    <a class="ui inverted yellow basic button" id="admin_button" href="{% url 'admin:index' %}">Admin
+                        page</a>
+                </div>
+            {% endif %}
+            <div class="item">
+                <a class="ui inverted red basic button" id="logout_button" href="{% url 'logout' %}">Log-out</a>
+            </div>
+        {% else %}
+            <div class="item">
+                <div class="ui inverted green basic button" id="login_button">Log-in</div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% if not user.is_authenticated %}
+    <div class="ui mini modal" id="login_modal">
+        <div class="content">
+            <h2 class="ui teal center aligned header">
+                Log-in to your account
+            </h2>
+            <form class="ui mini form" action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <div class="ui segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button class="ui fluid large teal submit button" type="submit">Log-in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endif %}
+{% block content %}
+{% endblock %}
+{% block script %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#login_button').on('click', function () {
+                $('#login_modal').modal('show')
+            })
+        })
+    </script>
+{% endblock %}
+{% block extrascript %}{% endblock %}
+</body>
+</html>

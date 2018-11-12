@@ -6,7 +6,6 @@ from django.views.decorators.cache import cache_page
 from .models import Leaderboard, Tournament
 
 
-@cache_page(60 * 15)
 def index(request):
     context = {
         'mixed_events': Tournament.objects.filter(~Q(ruleset__ruleset='other') & ~Q(ruleset__ruleset='team')).order_by(
