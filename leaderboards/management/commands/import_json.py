@@ -33,7 +33,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         if options['bulk']:
             for infile in sorted(
-                    glob.glob(os.path.join(settings.BASE_DIR, 'leaderboards', 'tournament_jsons', '*.json'))):
+                    glob.glob(os.path.join(settings.BASE_DIR, 'leaderboards', 'tournament_jsons', 'tournaments', '*.json'))):
                 with open(infile) as tournament_json:
                     tournament_data = json.load(tournament_json)
                 self.add_tournament(tournament_data, options)
@@ -41,9 +41,7 @@ class Command(BaseCommand):
         else:
             for file_name in options['tourney_name']:
                 try:
-                    with open(os.path.join(settings.BASE_DIR,
-                                           'leaderboards', 'tournament_jsons',
-                                           file_name)) as tournament_json:
+                    with open(os.path.join(settings.BASE_DIR, file_name)) as tournament_json:
                         tournament_data = json.load(tournament_json)
                 except FileNotFoundError:
                     self.stdout.write(f"File {options['tourney_name']} not found")
