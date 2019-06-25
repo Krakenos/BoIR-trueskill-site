@@ -28,7 +28,7 @@ Furthermore, by using the [TrueSkill algorithm](https://www.microsoft.com/en-us/
 
 * Then you will have to migrate your database to work with django models, and fill it with data. To do so run the following commands in the main directory of cloned project.
    * `$ python manage.py migrate`
-   * `$ python manage.py bulk_import_jsons`
+   * `$ python manage.py import_json --bulk --adduser`
 
 * To run debug server simply type:
    * `$ python manage.py runserver`
