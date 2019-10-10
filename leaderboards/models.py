@@ -154,7 +154,7 @@ class Leaderboard(models.Model):
     matches_played = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ['exposure']
+        ordering = ['-exposure']
 
     def __str__(self):
         return f'{self.leaderboard_type}: {self.exposure}.{self.player}'
