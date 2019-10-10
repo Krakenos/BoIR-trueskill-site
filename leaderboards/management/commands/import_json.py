@@ -112,7 +112,7 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f"Successfully added {tournament_data['name']} tournament"))
 
     def add_team(self, tournament_data, new_tournament, options):
-        for team in tournament_data['squads']:
+        for team in tournament_data['teams']:
             db_team = Team.objects.get_or_create(tournament=new_tournament, name=team['name'])[0]
             for player in team['participants']:
                 db_player = self.check_player_in_db(player, options)
