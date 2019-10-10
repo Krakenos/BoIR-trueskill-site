@@ -33,7 +33,8 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         if options['bulk']:
             for infile in sorted(
-                    glob.glob(os.path.join(settings.BASE_DIR, 'leaderboards', 'tournament_jsons', 'tournaments', '*.json'))):
+                    glob.glob(
+                        os.path.join(settings.BASE_DIR, 'leaderboards', 'tournament_jsons', 'tournaments', '*.json'))):
                 with open(infile) as tournament_json:
                     tournament_data = json.load(tournament_json)
                 self.add_tournament(tournament_data, options)
@@ -88,7 +89,7 @@ class Command(BaseCommand):
                     ruleset=match['ruleset'])[0]
             else:
                 db_match.ruleset = new_tournament.ruleset
-            if db_match.ruleset.ruleset == 'mixed':
+            if db_match.ruleset.ruleset == 'mixed' and 'ruleset_per_round' in match:
                 for round_number, round_details in enumerate(match['ruleset_per_round'], 1):
                     db_round = RulesetPerRound(round_number=round_number,
                                                match=db_match,
@@ -102,7 +103,8 @@ class Command(BaseCommand):
             db_match.save()
         if ('winner' in tournament_data) and new_tournament.ruleset.ruleset == 'team':
             new_tournament.winner_team = Team.objects.get(tournament=new_tournament, name=tournament_data['winner'])
-        elif ('winner' in tournament_data) and new_tournament.ruleset.ruleset != 'team':
+        elif ('winner' in tournament_data) and new_tournament.ruleset.ruleset != 'team' and \
+                tournament_data['winner'] != '':
             new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
         for video in tournament_data['videos']:
             Vod(tournament=new_tournament,
