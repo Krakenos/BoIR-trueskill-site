@@ -9,7 +9,7 @@ from django.views.decorators.cache import cache_page
 from .models import Leaderboard, Tournament
 
 
-#@cache_page(60 * 15)
+@cache_page(60 * 15)
 def index(request):
     context = {
         'mixed_events': Tournament.objects.filter(~Q(ruleset__ruleset='other') & ~Q(ruleset__ruleset='team')).order_by(
@@ -24,7 +24,7 @@ def index(request):
     return render(request, 'leaderboards/index.html', context)
 
 
-#@cache_page(60 * 15)
+@cache_page(60 * 15)
 def get_leaderboard(request, leaderboard_type):
     if leaderboard_type not in ['seeded', 'unseeded', 'mixed']:
         raise Http404("This leaderboard doesn't exist")
