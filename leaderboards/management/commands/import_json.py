@@ -82,6 +82,13 @@ class Command(BaseCommand):
                 db_match = new_tournament.match_set.create(winner=match_winner,
                                                            loser=match_loser,
                                                            score=score)
+
+                # Also update the "last_played" field for each player in the database
+                match_winner.last_played = tournament_data['date']
+                match_winner.save()
+                match_loser.last_played = tournament_data['date']
+                match_loser.save()
+
             if 'description' in match:
                 db_match.description = match['description']
             if 'ruleset' in match:
@@ -101,11 +108,12 @@ class Command(BaseCommand):
                         db_round.ruleset = Ruleset.objects.get(ruleset=round_details['ruleset'])
                     db_round.save()
             db_match.save()
-        if ('winner' in tournament_data) and new_tournament.ruleset.ruleset == 'team':
-            new_tournament.winner_team = Team.objects.get(tournament=new_tournament, name=tournament_data['winner'])
-        elif ('winner' in tournament_data) and new_tournament.ruleset.ruleset != 'team' and \
-                tournament_data['winner'] != '':
-            new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
+
+        if 'winner' in tournament_data and tournament_data['winner'] != 'n/a':
+            if new_tournament.ruleset.ruleset == 'team':
+                new_tournament.winner_team = Team.objects.get(tournament=new_tournament, name=tournament_data['winner'])
+            else:
+                new_tournament.winner = Player.objects.get(playeralias__alias=tournament_data['winner'].lower())
         for video in tournament_data['videos']:
             Vod(tournament=new_tournament,
                 description=video['description'],

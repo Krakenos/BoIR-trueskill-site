@@ -14,13 +14,12 @@
     <h1 class="ui header">Tournament Leaderboards</h1>
     <div class="ui divider"></div>
     <div class="ui segment">
-        <h4 class="ui header">General information about leaderboards</h4>
+        <h4 class="ui header">General information about the leaderboards:</h4>
         <ul class="ui list">
-            <li>Players ratings are based on 1v1 match up's in competitive tournaments</li>
-            <li>Algorithm used to calculate ratings is Microsoft's Trueskill</li>
-            <li>Players will show on the specific leaderboard only if they played in at least 2 tournaments that count
-                towards it
-            </li>
+            <li>The player's ratings are based on their 1v1 matches in the competitive tournaments that they play in.</li>
+            <li>The algorithm used to calculate the ratings is Microsoft's <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a>.</li>
+            <li>Players will only show up on a leaderboard if they have played 2 or more tournaments that count towards it.</li>
+            <li>Players who have not participated in a tournament for one year or longer are subject to a rating penalty. One year is equivalent to a 25% decay, two years is a 50% decay, and so forth.</li>
         </ul>
     </div>
     <div class="large three ui buttons">
@@ -29,37 +28,28 @@
         <button class="ui button" id="unseeded_button">Unseeded</button>
     </div>
     <div class="ui segment" id="mixed_leaderboard_details">
-        <h4 class="ui header">Mixed leaderboard details</h4>
+        <h4 class="ui header">Mixed leaderboard details:</h4>
         <ul class="ui list">
-            <li>For this leaderboard count all the seeded, unseeded and diversity events</li>
-            <li>Seeded races are weighted 4 times more than unseeded races</li>
-            <li>Diversity races are weighted the same as unseeded races</li>
-            <li>Mixed races, where each set alternated between seeded, unseeded, and diversity ruleset (example BITE 2
-                tournament) are weighted 2 times more than unseeded
-            </li>
-            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_mixed')">following tournaments</a>
-                count towards mixed leaderboard
-            </li>
+            <li>This leaderboard counts all of the seeded, unseeded and diversity events.</li>
+            <li>Seeded races are weighted 4 times more than unseeded races.</li>
+            <li>Diversity races are weighted the same as unseeded races.</li>
+            <li>Mixed races are weighted 2 times more than unseeded. (Mixed races are races where each set is a combination of various formats, like in BITE 2.) </li>
+            <li>Currently the <a href="javascript:void(0)" onclick="ShowModal('#modal_mixed')">following tournaments</a> count towards the mixed leaderboard.</li>
         </ul>
     </div>
     <div class="ui segment" id="seeded_leaderboard_details">
-        <h4 class="ui header">Seeded leaderboard details</h4>
+        <h4 class="ui header">Seeded leaderboard details:</h4>
         <ul class="ui list">
-            <li>For this leaderboard count only purely seeded races</li>
-            <li>All the races are weighted the same</li>
-            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_seeded')">following tournaments</a>
-                count towards seeded leaderboard
-            </li>
+            <li>This leaderboard counts only seeded events.</li>
+            <li>Currently the <a href="javascript:void(0)" onclick="ShowModal('#modal_seeded')">following tournaments</a> count towards the seeded leaderboard.</li>
         </ul>
     </div>
     <div class="ui segment" id="unseeded_leaderboard_details">
-        <h4 class="ui header">Unseeded leaderboard details</h4>
+        <h4 class="ui header">Unseeded leaderboard details:</h4>
         <ul class="ui list">
-            <li>For this leaderboard count unseeded, diversity, and mixed events</li>
-            <li>All the races are weighted the same, no matter the ruleset</li>
-            <li>Currently <a href="javascript:void(0)" onclick="ShowModal('#modal_unseeded')">following tournaments</a>
-                count towards unseeded leaderboard
-            </li>
+            <li>This leaderboard counts unseeded, diversity, and mixed events.</li>
+            <li>All the races are weighted the same, regardless of the ruleset.</li>
+            <li>Currently the <a href="javascript:void(0)" onclick="ShowModal('#modal_unseeded')">following tournaments</a> count towards the unseeded leaderboard.</li>
         </ul>
     </div>
     <div class="ui basic mini modal" id="modal_mixed">
@@ -109,15 +99,17 @@
     </div>
     <table id="leaderboard" class="ui responsive no-wrap unstackable celled table">
         <thead>
-        <tr>
-            <th>Place</th>
-            <th>Name</th>
-            <th>Rating</th>
-            <th>Tournaments Played</th>
-            <th>Matches Played</th>
-        </tr>
+            <tr>
+                <th>Place</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Decay</th>
+                <th>Unadjusted Rating</th>
+                <th>Tournaments Played</th>
+                <th>Matches Played</th>
+                <th>Date of Last Tournament</th>
+            </tr>
         </thead>
-
     </table>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -127,24 +119,27 @@
     function GetLeaderboard(type) {
         $(document).ready(function () {
             table = $('#leaderboard').DataTable({
-                ajax: "ajax/leaderboards/" + type,
+                ajax: 'ajax/leaderboards/' + type,
                 columns: [
-                    {"data": "placement"},
-                    {"data": "player__name"},
-                    {"data": "exposure"},
-                    {"data": "tournaments_played"},
-                    {"data": "matches_played"}
+                    {'data': 'place'},
+                    {'data': 'player__name'},
+                    {'data': 'adjusted_exposure'},
+                    {'data': 'decay'},
+                    {'data': 'exposure'},
+                    {'data': 'tournaments_played'},
+                    {'data': 'matches_played'},
+                    {'data': 'player__last_played'},
                 ],
                 columnDefs: [
                     {
                         render: function (data) {
                             return data.toFixed(2);
                         },
-                        targets: [2]
+                        targets: [2, 3, 4], // adjusted_exposure, decay, exposure
                     }
                 ],
-                "lengthMenu": [[25, 50, 75, 100, -1], [25, 50, 75, 100, "All"]],
-                "pageLength": 25
+                lengthMenu: [[25, 50, 75, 100, -1], [25, 50, 75, 100, 'All']],
+                pageLength: 25,
             });
         });
     }

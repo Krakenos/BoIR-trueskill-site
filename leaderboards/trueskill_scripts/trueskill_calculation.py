@@ -75,7 +75,6 @@ class TrueskillCalculations:
         for record in leaderboard_list:
             player = self.leaderboard.objects.get_or_create(player=self.player.objects.get(name=record['name']),
                                                             leaderboard_type=leaderboard_type)[0]
-            player.placement = record['place']
             player.exposure = record['exposure']
             player.mu = record['mu']
             player.sigma = record['sigma']

@@ -5,6 +5,7 @@ from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalcul
 
 class Player(models.Model):
     name = models.CharField(max_length=200, unique=True)
+    last_played = models.DateField(null=True)
 
     class Meta:
         ordering = ['name']
@@ -146,7 +147,6 @@ class Vod(models.Model):
 
 class Leaderboard(models.Model):
     leaderboard_type = models.CharField(max_length=200)
-    placement = models.IntegerField(null=True)
     player = models.ForeignKey(Player, on_delete=models.CASCADE)
     exposure = models.FloatField(null=True)  # Default sorting value
     mu = models.FloatField(null=True)
@@ -155,7 +155,7 @@ class Leaderboard(models.Model):
     matches_played = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ['placement']
+        ordering = ['-exposure']
 
     def __str__(self):
-        return f'{self.leaderboard_type}: {self.placement}.{self.player}'
+        return f'{self.leaderboard_type}: {self.exposure}.{self.player}'
