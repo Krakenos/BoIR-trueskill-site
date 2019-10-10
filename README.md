@@ -11,7 +11,7 @@ Furthermore, by using the [TrueSkill algorithm](https://www.microsoft.com/en-us/
 * In order to install development environment you need to have installed Python 3.6+.
 
 * If you already have that installed and cloned this repository, next step is to download all the requirements:
-   * `$ pip install -r requirements`
+   * `pip install -r requirements.txt`
 
 * Next step is to setup your .env, the following settings work great for the purpose of local environment.
 
@@ -27,8 +27,8 @@ Furthermore, by using the [TrueSkill algorithm](https://www.microsoft.com/en-us/
 *NOTE: CHALLONGE_API_KEY is not being used yet*
 
 * Then you will have to migrate your database to work with django models, and fill it with data. To do so run the following commands in the main directory of cloned project.
-   * `$ python manage.py migrate`
-   * `$ python manage.py import_json --bulk --adduser`
+   * `python manage.py migrate`
+   * `python manage.py import_json --bulk --adduser`
 
 * To run debug server simply type:
-   * `$ python manage.py runserver`
+   * `python manage.py runserver`
