@@ -25,10 +25,22 @@ def index(request):
 def get_leaderboard(request, leaderboard_type):
     if leaderboard_type not in ['seeded', 'unseeded', 'mixed']:
         raise Http404("This leaderboard doesn't exist")
+
+    # Get the leaderboard from the database and make it a list
     queryset_object = Leaderboard.objects.select_related('player__id').filter(
         leaderboard_type=leaderboard_type)
     leaderboard_list = list(
-        queryset_object.values('placement', 'player__name', 'exposure', 'tournaments_played', 'matches_played'))
+        queryset_object.values('player__name', 'exposure', 'tournaments_played', 'matches_played'))
+    def sort_exposure(leaderboard):
+        return leaderboard['exposure']
+    leaderboard_list.sort(key=sort_exposure, reverse=True)
+
+    # Add a value for place
+    place = 1
+    for entry in leaderboard_list:
+        entry['place'] = place
+        place += 1
+
     data = {
         'data': leaderboard_list
     }
