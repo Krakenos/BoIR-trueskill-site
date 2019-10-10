@@ -5,6 +5,7 @@ from leaderboards.trueskill_scripts.trueskill_calculation import TrueskillCalcul
 
 class Player(models.Model):
     name = models.CharField(max_length=200, unique=True)
+    last_played = models.DateField(null=True)
 
     class Meta:
         ordering = ['name']
