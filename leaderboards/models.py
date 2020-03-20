@@ -68,7 +68,7 @@ class Tournament(models.Model):
     date = models.DateField()
     notability = models.CharField(max_length=200, default='minor')
     ruleset = models.ForeignKey(Ruleset, null=True, blank=True, on_delete=models.CASCADE)
-    description = models.CharField(max_length=400, null=True, blank=True)
+    description = models.CharField(max_length=2000, null=True, blank=True)
     winner = models.ForeignKey(Player, null=True, blank=True, on_delete=models.CASCADE, related_name='tournament_wins')
     winner_team = models.ForeignKey('Team', null=True, blank=True, on_delete=models.CASCADE,
                                     related_name='tournament_wins')
