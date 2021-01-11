@@ -2,3 +2,4 @@ requests
 trueskill
 django
 django-environ
+dateutils
